@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dde072bd.css",
-    "main.js": "/static/js/main.f7fc46c7.js",
+    "main.js": "/static/js/main.77c65d71.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/SSI-appcryptodemo.mp4": "/static/media/SSI-appcryptodemo.55ac244d56208aef8b43.mp4",
     "static/media/SBR-testingdemo.mp4": "/static/media/SBR-testingdemo.83d99818fd736dec458a.mp4",
@@ -60,11 +60,11 @@
     "static/media/SBR-Freebodydiagram.png": "/static/media/SBR-Freebodydiagram.95bc48631c26bc46a369.png",
     "index.html": "/index.html",
     "main.dde072bd.css.map": "/static/css/main.dde072bd.css.map",
-    "main.f7fc46c7.js.map": "/static/js/main.f7fc46c7.js.map",
+    "main.77c65d71.js.map": "/static/js/main.77c65d71.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dde072bd.css",
-    "static/js/main.f7fc46c7.js"
+    "static/js/main.77c65d71.js"
   ]
 }
