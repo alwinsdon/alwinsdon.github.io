@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f3c16db1.css",
-    "main.js": "/static/js/main.9b26f13e.js",
+    "main.css": "/static/css/main.62726d65.css",
+    "main.js": "/static/js/main.71542b63.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/SSI-appcryptodemo.mp4": "/static/media/SSI-appcryptodemo.55ac244d56208aef8b43.mp4",
     "static/media/SBR-testingdemo.mp4": "/static/media/SBR-testingdemo.83d99818fd736dec458a.mp4",
@@ -23,12 +23,9 @@
     "static/media/ALM-Teleoptest.mp4": "/static/media/ALM-Teleoptest.c2c7832cd8002036e580.mp4",
     "static/media/ALM-demo1.mp4": "/static/media/ALM-demo1.c2c7832cd8002036e580.mp4",
     "static/media/ALM-choosinglidars.jpg": "/static/media/ALM-choosinglidars.d377981d7846bfca0c12.jpg",
-    "static/media/mock10.png": "/static/media/mock10.2d05b02ba569a430a255.png",
     "static/media/ALM-encoderreading.jpg": "/static/media/ALM-encoderreading.3a119568367aaf5bab53.jpg",
     "static/media/ALM-Demo3.mp4": "/static/media/ALM-Demo3.8dfe9ab699db6252d9b3.mp4",
-    "static/media/mock09.png": "/static/media/mock09.e18677ccfc932e52d754.png",
     "static/media/ALM-plan1.jpg": "/static/media/ALM-plan1.7a04840b1a4a6e8d82a7.jpg",
-    "static/media/mock08.png": "/static/media/mock08.13f46873fdbd382f4b76.png",
     "static/media/ALM-demo2.mp4": "/static/media/ALM-demo2.37eecd6215060cfe0dcf.mp4",
     "static/media/ALM-frame.jpg": "/static/media/ALM-frame.518520a45effbd0a9eb4.jpg",
     "static/media/SSI-testing1.png": "/static/media/SSI-testing1.4ad2fe5deb4e459d829a.png",
@@ -41,7 +38,6 @@
     "static/media/ALM-lidardemo.mp4": "/static/media/ALM-lidardemo.6dc24ee05767f4502303.mp4",
     "static/media/SSI-testingfsr.jpg": "/static/media/SSI-testingfsr.ebf1dfca4f6936c323b8.jpg",
     "static/media/bg-light.png": "/static/media/bg-light.bac0efb485244a522981.png",
-    "static/media/mock07.png": "/static/media/mock07.3f1110f482232b33c6a2.png",
     "static/media/SSI-sensorconnection.jpg": "/static/media/SSI-sensorconnection.afbbd39ee43c9c4e2121.jpg",
     "static/media/bg-dark.png": "/static/media/bg-dark.f420c6b8458af72de935.png",
     "static/media/SSI-compplacement.jpg": "/static/media/SSI-compplacement.e403157d7dc60e35aa76.jpg",
@@ -61,12 +57,12 @@
     "static/media/SBR-Circuitdiagram.png": "/static/media/SBR-Circuitdiagram.e046ce3a698992885d44.png",
     "static/media/SBR-Freebodydiagram.png": "/static/media/SBR-Freebodydiagram.95bc48631c26bc46a369.png",
     "index.html": "/index.html",
-    "main.f3c16db1.css.map": "/static/css/main.f3c16db1.css.map",
-    "main.9b26f13e.js.map": "/static/js/main.9b26f13e.js.map",
+    "main.62726d65.css.map": "/static/css/main.62726d65.css.map",
+    "main.71542b63.js.map": "/static/js/main.71542b63.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3c16db1.css",
-    "static/js/main.9b26f13e.js"
+    "static/css/main.62726d65.css",
+    "static/js/main.71542b63.js"
   ]
 }
