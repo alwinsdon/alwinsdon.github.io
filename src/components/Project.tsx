@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import mock01 from '../assets/images/mock01.png';
 import mock02 from '../assets/images/mock02.png';
 import mock03 from '../assets/images/mock03.png';
@@ -17,18 +18,18 @@ function Project() {
         <h1>Personal Projects</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://github.com/alwinsdon" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/alwinsdon" target="_blank" rel="noreferrer"><h2>E-Commerce Platform</h2></a>
+                <Link to="/project/ecommerce"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></Link>
+                <Link to="/project/ecommerce"><h2>E-Commerce Platform</h2></Link>
                 <p>Built a full-stack e-commerce application with product catalog, shopping cart, and secure checkout. Technologies: React, Node.js, MongoDB, and Stripe API integration.</p>
             </div>
             <div className="project">
-                <a href="https://github.com/alwinsdon" target="_blank" rel="noreferrer"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/alwinsdon" target="_blank" rel="noreferrer"><h2>Task Management App</h2></a>
+                <Link to="/project/task-manager"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></Link>
+                <Link to="/project/task-manager"><h2>Task Management App</h2></Link>
                 <p>Developed a collaborative task management application with real-time updates, user authentication, and team workspaces. Built with React, Firebase, and Material-UI.</p>
             </div>
             <div className="project">
-                <a href="https://github.com/alwinsdon" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/alwinsdon" target="_blank" rel="noreferrer"><h2>Weather Dashboard</h2></a>
+                <Link to="/project/weather-dashboard"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></Link>
+                <Link to="/project/weather-dashboard"><h2>Weather Dashboard</h2></Link>
                 <p>Created a responsive weather dashboard that displays current conditions and forecasts using third-party APIs. Features include location search and data visualization with Chart.js.</p>
             </div>
             <div className="project">
