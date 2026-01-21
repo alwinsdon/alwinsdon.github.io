@@ -2,9 +2,10 @@ import React, {useState, useEffect} from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { Navigation, Footer } from "./components";
 import HomePage from "./pages/HomePage";
-import ECommerceProject from "./components/projects/ECommerceProject";
-import TaskManagerProject from "./components/projects/TaskManagerProject";
-import WeatherDashboardProject from "./components/projects/WeatherDashboardProject";
+import AutonomousLawnmowerProject from "./components/projects/AutonomousLawnmowerProject";
+import SmartInsoleProject from "./components/projects/SmartInsoleProject";
+import SelfBalancingRobotProject from "./components/projects/SelfBalancingRobotProject";
+import OpenManipulatorProject from "./components/projects/OpenManipulatorProject";
 import './index.scss';
 
 function ScrollToTop() {
@@ -42,9 +43,10 @@ function App() {
                 <ScrollToTop />
                 <Routes>
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/project/ecommerce" element={<ECommerceProject />} />
-                    <Route path="/project/task-manager" element={<TaskManagerProject />} />
-                    <Route path="/project/weather-dashboard" element={<WeatherDashboardProject />} />
+                    <Route path="/project/autonomous-lawnmower" element={<AutonomousLawnmowerProject />} />
+                    <Route path="/project/smart-insole" element={<SmartInsoleProject />} />
+                    <Route path="/project/self-balancing-robot" element={<SelfBalancingRobotProject />} />
+                    <Route path="/project/openmanipulator-arm" element={<OpenManipulatorProject />} />
                 </Routes>
                 <Footer />
             </div>

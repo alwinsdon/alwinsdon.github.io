@@ -18,24 +18,24 @@ function Project() {
         <h1>Personal Projects</h1>
         <div className="projects-grid">
             <div className="project">
-                <Link to="/project/ecommerce"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></Link>
-                <Link to="/project/ecommerce"><h2>E-Commerce Platform</h2></Link>
-                <p>Built a full-stack e-commerce application with product catalog, shopping cart, and secure checkout. Technologies: React, Node.js, MongoDB, and Stripe API integration.</p>
+                <Link to="/project/autonomous-lawnmower"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></Link>
+                <Link to="/project/autonomous-lawnmower"><h2>Autonomous Lawnmower</h2></Link>
+                <p>Designed a 200+ lb autonomous robotic platform with tank tracks, ROS-based navigation, SLAM mapping, YOLO object detection, and LiDAR-camera sensor fusion. Top speed 28 km/h, 5-hour runtime, sub-$1k cost.</p>
             </div>
             <div className="project">
-                <Link to="/project/task-manager"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></Link>
-                <Link to="/project/task-manager"><h2>Task Management App</h2></Link>
-                <p>Developed a collaborative task management application with real-time updates, user authentication, and team workspaces. Built with React, Firebase, and Material-UI.</p>
+                <Link to="/project/smart-insole"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></Link>
+                <Link to="/project/smart-insole"><h2>Smart Insole</h2></Link>
+                <p>Engineered a wearable sensing platform with ESP32, FSR sensors, IMU, and haptic actuators for step tracking. Features sensor fusion algorithms and ML-based anti-cheat detection with 75-80% accuracy.</p>
             </div>
             <div className="project">
-                <Link to="/project/weather-dashboard"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></Link>
-                <Link to="/project/weather-dashboard"><h2>Weather Dashboard</h2></Link>
-                <p>Created a responsive weather dashboard that displays current conditions and forecasts using third-party APIs. Features include location search and data visualization with Chart.js.</p>
+                <Link to="/project/self-balancing-robot"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></Link>
+                <Link to="/project/self-balancing-robot"><h2>Self-Balancing Robot</h2></Link>
+                <p>Built a two-wheel balancing robot with MIG-welded metal chassis, Kalman-filtered IMU, and PID control on Arduino. Achieves 3-5 minutes stable balancing, compensating for 10° tilt disturbances.</p>
             </div>
             <div className="project">
-                <a href="https://github.com/alwinsdon" target="_blank" rel="noreferrer"><img src={mock07} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/alwinsdon" target="_blank" rel="noreferrer"><h2>Blog Platform</h2></a>
-                <p>Designed and developed a full-featured blogging platform with markdown support, comments, and user profiles. Tech stack: React, Express.js, PostgreSQL, and JWT authentication.</p>
+                <Link to="/project/openmanipulator-arm"><img src={mock07} className="zoom" alt="thumbnail" width="100%"/></Link>
+                <Link to="/project/openmanipulator-arm"><h2>OpenManipulator Robotic Arm</h2></Link>
+                <p>Constructed a 6-DOF robotic arm with 3D-printed joints and ROS integration. Programmed motion planning using MoveIt, Gazebo, and custom PID/IK controllers. Validated pick-and-place with ~1kg payload.</p>
             </div>
             <div className="project">
                 <a href="https://github.com/alwinsdon" target="_blank" rel="noreferrer"><img src={mock06} className="zoom" alt="thumbnail" width="100%"/></a>
