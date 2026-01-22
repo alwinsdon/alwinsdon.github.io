@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c28c8f0.css",
-    "main.js": "/static/js/main.f348ebb6.js",
+    "main.css": "/static/css/main.c7cab6dc.css",
+    "main.js": "/static/js/main.2193bfe1.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/SSI-appcryptodemo.mp4": "/static/media/SSI-appcryptodemo.55ac244d56208aef8b43.mp4",
     "static/media/SBR-testingdemo.mp4": "/static/media/SBR-testingdemo.83d99818fd736dec458a.mp4",
@@ -60,12 +60,12 @@
     "static/media/SBR-Circuitdiagram.png": "/static/media/SBR-Circuitdiagram.e046ce3a698992885d44.png",
     "static/media/SBR-Freebodydiagram.png": "/static/media/SBR-Freebodydiagram.95bc48631c26bc46a369.png",
     "index.html": "/index.html",
-    "main.9c28c8f0.css.map": "/static/css/main.9c28c8f0.css.map",
-    "main.f348ebb6.js.map": "/static/js/main.f348ebb6.js.map",
+    "main.c7cab6dc.css.map": "/static/css/main.c7cab6dc.css.map",
+    "main.2193bfe1.js.map": "/static/js/main.2193bfe1.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c28c8f0.css",
-    "static/js/main.f348ebb6.js"
+    "static/css/main.c7cab6dc.css",
+    "static/js/main.2193bfe1.js"
   ]
 }
