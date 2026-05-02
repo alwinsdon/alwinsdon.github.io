@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e560fa2d.css",
-    "main.js": "/static/js/main.c97e8995.js",
+    "main.js": "/static/js/main.f7797ef8.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/SSI-appcryptodemo.mp4": "/static/media/SSI-appcryptodemo.55ac244d56208aef8b43.mp4",
     "static/media/SBR-testingdemo.mp4": "/static/media/SBR-testingdemo.83d99818fd736dec458a.mp4",
@@ -43,7 +43,6 @@
     "static/media/SSI-compplacement.jpg": "/static/media/SSI-compplacement.e403157d7dc60e35aa76.jpg",
     "static/media/SSI-finalprototype.jpg": "/static/media/SSI-finalprototype.c80ed994721dc3078d5d.jpg",
     "static/media/SSI-Prototype1.jpg": "/static/media/SSI-Prototype1.e9bd9c372d923f99e82a.jpg",
-    "static/media/alwins-photo.png": "/static/media/alwins-photo.a34350d90dcaef910274.png",
     "static/media/SSI-ElectronicsComponents.jpg": "/static/media/SSI-ElectronicsComponents.85b24655b8765a772faf.jpg",
     "static/media/SSI-3Dprint.jpg": "/static/media/SSI-3Dprint.73496baead0c697d8e08.jpg",
     "static/media/ALM-cad model2.png": "/static/media/ALM-cad model2.e65e6f543341edd46074.png",
@@ -52,6 +51,7 @@
     "static/media/ALM-cad model.png": "/static/media/ALM-cad model.de39160c5cdf298b28c3.png",
     "static/media/SBR-kalmanfilterimu.png": "/static/media/SBR-kalmanfilterimu.a2e81ed1560e0b204798.png",
     "static/media/SSI-plantardistribution.png": "/static/media/SSI-plantardistribution.102b2e744ac55929e858.png",
+    "static/media/alwins-photo.png": "/static/media/alwins-photo.df6e9a87efa645712093.png",
     "static/media/SBR-PIDalgo.png": "/static/media/SBR-PIDalgo.a1cc30565cff813272a4.png",
     "static/media/SBR-finalpic.jpeg": "/static/media/SBR-finalpic.4de845000daa93e0d1f4.jpeg",
     "static/media/SSI-cadmodel.png": "/static/media/SSI-cadmodel.0224487805eef9edc0cc.png",
@@ -61,11 +61,11 @@
     "static/media/SBR-Freebodydiagram.png": "/static/media/SBR-Freebodydiagram.95bc48631c26bc46a369.png",
     "index.html": "/index.html",
     "main.e560fa2d.css.map": "/static/css/main.e560fa2d.css.map",
-    "main.c97e8995.js.map": "/static/js/main.c97e8995.js.map",
+    "main.f7797ef8.js.map": "/static/js/main.f7797ef8.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e560fa2d.css",
-    "static/js/main.c97e8995.js"
+    "static/js/main.f7797ef8.js"
   ]
 }
