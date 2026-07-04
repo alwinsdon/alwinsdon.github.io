@@ -67,7 +67,7 @@ This single command will:
 
 Your portfolio will be live at:
 
-**https://alwinsdon.github.io/alwinsdon.github.io/**
+**https://alwinsdon.github.io/**
 
 ---
 

@@ -14,6 +14,8 @@ function ScrollToTop() {
 
     useEffect(() => {
         if (hash) {
+            // Clear the hash from the URL to prevent scroll-on-reload
+            window.history.replaceState(null, '', pathname);
             const element = document.querySelector(hash);
             if (element) {
                 element.scrollIntoView({ behavior: 'smooth' });

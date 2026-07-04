@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Main,
-  Timeline,
   Expertise,
   Project,
   Contact,
@@ -13,7 +12,6 @@ function HomePage() {
     <FadeIn transitionDuration={700}>
       <Main/>
       <Expertise/>
-      <Timeline/>
       <Project/>
       <Contact/>
     </FadeIn>

@@ -16,50 +16,43 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2023 - present"
+            date="January 2025 - Present"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Software Developer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Current Role</h4>
+            <h3 className="vertical-timeline-element-title">Robotics Engineer Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Advanced Telerobotics Lab, Kent State University</h4>
             <p>
-              Full-stack Development, Web Applications, Database Design, API Integration
+              Built ROS2 packages integrating LiDAR, IMU, GPS, and encoder values for autonomous navigation and 
+              teleoperation control. Improved TurtleBot-based ROS2 training platform reliability by ~35% through 
+              systematic hardware debugging and PCB fault correction.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2023"
+            date="January 2025 - May 2025"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Junior Developer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Previous Position</h4>
+            <h3 className="vertical-timeline-element-title">Engineering Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Extended Reality (XR) Research Lab, Kent State</h4>
             <p>
-              Frontend Development, React, JavaScript, Responsive Design, Team Collaboration
+              Designed and modeled mechanical assemblies in Autodesk Inventor. Translated CAD designs into functional 
+              VR prototypes in Unity, enabling interactive simulations for product validation using VIVE Pro.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2021"
+            date="September 2023 - December 2023"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Developer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Internship</h4>
+            <h3 className="vertical-timeline-element-title">Engineering Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">International Engineering Co. (IECO), Kuwait</h4>
             <p>
-              Web Development, Bug Fixes, Code Review, Learning Best Practices
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2019 - 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Education</h3>
-            <h4 className="vertical-timeline-element-subtitle">Computer Science Studies</h4>
-            <p>
-              Programming Fundamentals, Data Structures, Algorithms, Software Engineering
+              Supported 10+ industrial maintenance and retrofit tasks by preparing CAD drawings and BOMs. Assisted 
+              in building sensor-based monitoring prototypes using Arduino/ESP32 and validated PLC ladder logic 
+              through bench-level testing.
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>

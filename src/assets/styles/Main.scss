@@ -52,8 +52,38 @@
 .about-section .image-wrapper {
     z-index: 2;
     img {
-        width: 150px;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center 10%;
         border-radius: 50%;
+        border: 4px solid #5000ca;
+        box-shadow: 0 0 25px rgba(80, 0, 202, 0.4);
+    }
+}
+
+.fancy-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(45deg, #5000ca, #9b51e0);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 0 20px rgba(80, 0, 202, 0.6);
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0 30px rgba(155, 81, 224, 0.8), 0 0 40px rgba(80, 0, 202, 0.6);
+        background: linear-gradient(45deg, #9b51e0, #5000ca);
+        color: white;
     }
 }
 

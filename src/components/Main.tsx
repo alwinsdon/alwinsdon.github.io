@@ -2,6 +2,7 @@ import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import '../assets/styles/Main.scss';
+import profilePhoto from '../assets/images/alwins-photo.png';
 
 function Main() {
 
@@ -9,7 +10,7 @@ function Main() {
     <div className="container">
       <div className="about-section">
         <div className="image-wrapper">
-          <img src="https://my-aws-assets.s3.us-west-2.amazonaws.com/portfolio-img/avatar_circle.jpeg" alt="Avatar" />
+          <img src={profilePhoto} alt="Alwins Mathews Don Davidson Daniel" />
         </div>
         <div className="content">
           <div className="social_icons">
@@ -18,6 +19,15 @@ function Main() {
           </div>
           <h1>Alwins Mathews Don Davidson Daniel</h1>
           <p>Mechatronics Engineering Student | Robotics Researcher</p>
+
+          <button className="fancy-button" onClick={() => {
+            const projectsElement = document.getElementById("projects");
+            if (projectsElement) {
+              projectsElement.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}>
+            View My Projects
+          </button>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/alwinsdon" target="_blank" rel="noreferrer"><GitHubIcon/></a>

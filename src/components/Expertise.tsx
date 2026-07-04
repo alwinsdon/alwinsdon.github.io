@@ -1,44 +1,46 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faRobot, faMicrochip, faCube } from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "Node.js",
+    "ROS2",
     "Python",
-    "SQL",
-    "MongoDB",
-    "PostgreSQL",
-    "REST APIs"
+    "C++",
+    "SLAM",
+    "LiDAR",
+    "Computer Vision",
+    "YOLO",
+    "Sensor Fusion",
+    "IMU",
+    "GPS",
+    "Nav2"
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub",
-    "Docker",
-    "AWS",
-    "CI/CD",
-    "Linux",
-    "Agile",
-    "Testing",
-    "Debugging"
+    "Arduino",
+    "ESP32",
+    "Raspberry Pi",
+    "PID Control",
+    "Kalman Filter",
+    "PCB Design",
+    "KiCad",
+    "PLC Programming",
+    "I2C/SPI/UART"
 ];
 
 const labelsThird = [
-    "Problem Solving",
-    "Team Collaboration",
-    "Communication",
-    "Code Review",
-    "Documentation",
-    "UI/UX Design",
-    "Responsive Design"
+    "Autodesk Inventor",
+    "CAD",
+    "3D Printing",
+    "MIG Welding",
+    "MoveIt",
+    "Gazebo",
+    "MATLAB",
+    "Unity/VR",
+    "Rapid Prototyping"
 ];
 
 function Expertise() {
@@ -48,9 +50,9 @@ function Expertise() {
             <h1>Expertise</h1>
             <div className="skills-grid">
                 <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I build modern, responsive web applications using cutting-edge technologies. With expertise in both frontend and backend development, I create seamless user experiences and robust server-side solutions.</p>
+                    <FontAwesomeIcon icon={faRobot} size="3x"/>
+                    <h3>Robotics & Autonomous Systems</h3>
+                    <p>I develop autonomous robotic platforms with ROS2-based navigation, SLAM mapping, sensor fusion, and computer vision. Experienced in building full autonomy stacks from LiDAR integration to path planning.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -60,9 +62,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Best Practices</h3>
-                    <p>Experienced in version control, containerization, and deployment workflows. I follow industry best practices to ensure code quality, maintainability, and efficient collaboration.</p>
+                    <FontAwesomeIcon icon={faMicrochip} size="3x"/>
+                    <h3>Embedded Systems & Control</h3>
+                    <p>Experienced in designing and programming embedded systems with microcontrollers, implementing PID control loops, Kalman filters, and custom PCB designs for robotics and IoT applications.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -72,11 +74,11 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>Professional Skills</h3>
-                    <p>Strong communicator and team player with a passion for clean code and user-centered design. I thrive in collaborative environments and enjoy solving complex problems.</p>
+                    <FontAwesomeIcon icon={faCube} size="3x"/>
+                    <h3>Mechanical Design & Simulation</h3>
+                    <p>Proficient in CAD modeling, 3D printing, and fabrication techniques including MIG welding. I use simulation tools like Gazebo and MoveIt for validating robotic systems before physical builds.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Soft Skills:</span>
+                        <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
