@@ -133,10 +133,11 @@
         
         .social_icons svg {
             color: #5000ca;
-            filter: none;
+            filter: drop-shadow(0 0 5px rgba(80, 0, 202, 0.4));
             
             &:hover {
                 color: #7000ff;
+                filter: drop-shadow(0 0 10px rgba(112, 0, 255, 0.6));
             }
         }
     }
@@ -154,7 +155,7 @@
     .fancy-button {
         color: #5000ca;
         border-color: #5000ca;
-        box-shadow: none;
+        box-shadow: 0 0 10px rgba(80, 0, 202, 0.2);
         
         &:hover {
             background: #5000ca;

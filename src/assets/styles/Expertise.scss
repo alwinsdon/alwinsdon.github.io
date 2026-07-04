@@ -109,7 +109,7 @@
         
         h3 {
             color: #5000ca;
-            text-shadow: none;
+            text-shadow: 0 0 5px rgba(80, 0, 202, 0.4);
         }
         
         p {
@@ -120,7 +120,7 @@
     .fancy-tech-tag {
         color: #5000ca;
         border-color: #5000ca;
-        box-shadow: none;
+        box-shadow: 0 0 5px rgba(80, 0, 202, 0.2);
         
         &:hover {
             background: #5000ca;
@@ -131,7 +131,7 @@
     
     .flex-chips .chip-title {
         color: #333;
-        text-shadow: none;
+        text-shadow: 0 0 5px rgba(80, 0, 202, 0.2);
     }
 }
 

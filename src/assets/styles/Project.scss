@@ -103,17 +103,17 @@
 
     .project h2 {
         color: #5000ca;
-        text-shadow: none;
+        text-shadow: 0 0 5px rgba(80, 0, 202, 0.4);
     }
 
     .project:hover h2 {
         color: #7000ff;
-        text-shadow: none;
+        text-shadow: 0 0 10px rgba(112, 0, 255, 0.6);
     }
 
     .zoom {
         border-color: #ddd;
-        box-shadow: none;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
 
     .project:hover .zoom {

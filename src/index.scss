@@ -129,27 +129,27 @@ p, h1, h2, h3, h4, h5, label, button {
 
   a:hover {
     color: #7000ff;
-    text-shadow: none;
+    text-shadow: 0 0 10px rgba(112, 0, 255, 0.5);
   }
 
   .navigation-bar svg {
     color: #5000ca;
-    filter: none;
+    filter: drop-shadow(0 0 5px rgba(80, 0, 202, 0.4));
   }
   
   .navigation-bar button {
     color: #5000ca;
-    text-shadow: none;
+    text-shadow: 0 0 5px rgba(80, 0, 202, 0.4);
     
     &:hover {
       color: #7000ff;
-      text-shadow: none;
+      text-shadow: 0 0 10px rgba(112, 0, 255, 0.6);
     }
   }
 
   .navigation-bar-responsive span, .navigation-bar-responsive p {
     color: #5000ca;
-    text-shadow: none;
+    text-shadow: 0 0 5px rgba(80, 0, 202, 0.4);
   }
 }
 
