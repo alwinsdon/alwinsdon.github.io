@@ -7,6 +7,7 @@ import SmartInsoleProject from "./components/projects/SmartInsoleProject";
 import SelfBalancingRobotProject from "./components/projects/SelfBalancingRobotProject";
 import OpenManipulatorProject from "./components/projects/OpenManipulatorProject";
 import ColorSortingRobotProject from "./components/projects/ColorSortingRobotProject";
+import HovercraftProject from "./components/projects/HovercraftProject";
 import './index.scss';
 
 function ScrollToTop() {
@@ -51,6 +52,7 @@ function App() {
                     <Route path="/project/self-balancing-robot" element={<SelfBalancingRobotProject />} />
                     <Route path="/project/openmanipulator-arm" element={<OpenManipulatorProject />} />
                     <Route path="/project/color-sorting-robot" element={<ColorSortingRobotProject />} />
+                    <Route path="/project/autonomous-hovercraft" element={<HovercraftProject />} />
                 </Routes>
                 <Footer />
             </div>

@@ -5,6 +5,7 @@ import insoleThumb from '../assets/images/projects/ssi/SSI-finalprototype.jpg';
 import balancingRobotThumb from '../assets/images/projects/sbr/SBR-finalpic.jpeg';
 import roboticArmThumb from '../assets/images/projects/ora/ORA-roboticarm.jpg';
 import colorSortingThumb from '../assets/images/projects/csr/CSR - Sorting setup view.jpeg';
+import hovercraftThumb from '../assets/images/projects/hcp/HCP - Angle view.jpeg';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -36,6 +37,11 @@ function Project() {
                 <Link to="/project/color-sorting-robot"><img src={colorSortingThumb} className="zoom" alt="Autonomous Color-Sorting Robot" width="100%"/></Link>
                 <Link to="/project/color-sorting-robot"><h2>Autonomous Color-Sorting Robot</h2></Link>
                 <p>Built an end-to-end pick-and-place system with OpenCV color detection, a 5-DOF DOFBOT arm, and an Ignition Perspective HMI dashboard. Autonomous sorting controlled via MQTT with live status feedback.</p>
+            </div>
+            <div className="project">
+                <Link to="/project/autonomous-hovercraft"><img src={hovercraftThumb} className="zoom" alt="Autonomous Hovercraft" width="100%"/></Link>
+                <Link to="/project/autonomous-hovercraft"><h2>Autonomous Hovercraft</h2></Link>
+                <p>Designed and built a remote-controlled, propeller-driven hovercraft capable of maneuvering over obstacles and delivering a payload. Features custom balsa wood shrouds and an animal-themed aesthetic.</p>
             </div>
         </div>
     </div>
