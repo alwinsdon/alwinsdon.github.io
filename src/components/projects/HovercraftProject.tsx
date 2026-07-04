@@ -8,8 +8,13 @@ import hcpMotor from '../../assets/images/projects/hcp/HCP- motor used.jpeg';
 import hcpServo from '../../assets/images/projects/hcp/HCP- servo and motor used.jpeg';
 import hcpTransmitter from '../../assets/images/projects/hcp/HCP - Transmitter.jpeg';
 
+import vidDemoRun from '../../assets/images/projects/hcp/HCP - Demo run.mp4';
+import vidTesting from '../../assets/images/projects/hcp/HCP - Testing.mp4';
+
 function HovercraftProject() {
   const images: ProjectImage[] = [
+    { src: vidDemoRun, caption: "Live demo run of the hovercraft on the obstacle course.", type: 'video' },
+    { src: vidTesting, caption: "Testing the hovercraft lift and maneuvering capabilities.", type: 'video' },
     { src: hcpAngle, caption: "Angled profile shot showcasing the custom balsa wood shrouds." },
     { src: hcpFront, caption: "Front view highlighting the lift mechanism and aerodynamic design." },
     { src: hcpCircuit, caption: "Detailed circuit diagram for the electronic speed controllers and servos." },

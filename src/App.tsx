@@ -8,6 +8,8 @@ import SelfBalancingRobotProject from "./components/projects/SelfBalancingRobotP
 import OpenManipulatorProject from "./components/projects/OpenManipulatorProject";
 import ColorSortingRobotProject from "./components/projects/ColorSortingRobotProject";
 import HovercraftProject from "./components/projects/HovercraftProject";
+import BluetoothRCCarProject from "./components/projects/BluetoothRCCarProject";
+import FoundryProject from "./components/projects/FoundryProject";
 import './index.scss';
 
 function ScrollToTop() {
@@ -53,6 +55,8 @@ function App() {
                     <Route path="/project/openmanipulator-arm" element={<OpenManipulatorProject />} />
                     <Route path="/project/color-sorting-robot" element={<ColorSortingRobotProject />} />
                     <Route path="/project/autonomous-hovercraft" element={<HovercraftProject />} />
+                    <Route path="/project/bluetooth-rc-car" element={<BluetoothRCCarProject />} />
+                    <Route path="/project/foundry-forging" element={<FoundryProject />} />
                 </Routes>
                 <Footer />
             </div>

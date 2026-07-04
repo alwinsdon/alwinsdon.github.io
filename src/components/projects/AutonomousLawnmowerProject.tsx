@@ -19,8 +19,23 @@ import imgRoboclawTest from '../../assets/images/projects/alm/ALM-roboclawtest.j
 import imgSlam from '../../assets/images/projects/alm/ALM-slam.jpeg';
 import imgWeldingFrame from '../../assets/images/projects/alm/ALM-weldingframe.jpg';
 
+import vidDemo1 from '../../assets/images/projects/alm/ALM-demo1.mp4';
+import vidDemo2 from '../../assets/images/projects/alm/ALM-demo2.mp4';
+import vidDemo3 from '../../assets/images/projects/alm/ALM-Demo3.mp4';
+import vidTeleop from '../../assets/images/projects/alm/ALM-Teleoptest.mp4';
+import vidEncoder from '../../assets/images/projects/alm/ALM-encodertest.mp4';
+import vidLidar from '../../assets/images/projects/alm/ALM-lidardemo.mp4';
+import vidTrack from '../../assets/images/projects/alm/ALM-tanktracktest.mp4';
+
 function AutonomousLawnmowerProject() {
   const images: ProjectImage[] = [
+    { src: vidDemo1, caption: "Autonomous navigation demo navigating the yard.", type: 'video' },
+    { src: vidDemo2, caption: "Following a pre-mapped trajectory.", type: 'video' },
+    { src: vidDemo3, caption: "Testing obstacle avoidance algorithms.", type: 'video' },
+    { src: vidTeleop, caption: "Teleoperation test using manual controls.", type: 'video' },
+    { src: vidEncoder, caption: "Verifying encoder odometry ticks.", type: 'video' },
+    { src: vidLidar, caption: "Visualizing the 2D LiDAR scan data.", type: 'video' },
+    { src: vidTrack, caption: "Testing the tank track mobility on grass.", type: 'video' },
     { src: imgPlan1, caption: "Initial conceptual sketch and blueprint planning." },
     { src: imgPlan2, caption: "Detailed system architecture and wiring diagram layout." },
     { src: imgPlan3, caption: "Hardware integration plan for sensors and motor controllers." },

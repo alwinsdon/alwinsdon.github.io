@@ -10,8 +10,13 @@ import imgChromeLaunch from '../../assets/images/projects/csr/CSR- chrome launch
 import imgMqttDash from '../../assets/images/projects/csr/CSR-dofbot mqtt dashboard.jpeg';
 import imgMqttSuccess from '../../assets/images/projects/csr/CSR-dofbot mqtt success.jpeg';
 
+import vidBackend from '../../assets/images/projects/csr/CSR- colour sorting demo backend.mp4';
+import vidFrontend from '../../assets/images/projects/csr/CSR- colour sorting demo frontend.mp4';
+
 function ColorSortingRobotProject() {
   const images: ProjectImage[] = [
+    { src: vidFrontend, caption: "Front-end perspective: the robot successfully sorting colored blocks.", type: 'video' },
+    { src: vidBackend, caption: "Back-end dashboard view during the sorting process.", type: 'video' },
     { src: imgSetupView, caption: "Overview of the color sorting workspace and camera setup." },
     { src: imgSideView, caption: "Side view of the 5-DOF Yahboom DOFBOT arm in position." },
     { src: imgInductive, caption: "Certification and training modules completed via Inductive University." },

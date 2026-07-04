@@ -16,9 +16,20 @@ import imgSensorConn from '../../assets/images/projects/ssi/SSI-sensorconnection
 import imgTesting1 from '../../assets/images/projects/ssi/SSI-testing1.png';
 import imgTestingFSR from '../../assets/images/projects/ssi/SSI-testingfsr.jpg';
 
+import vidFSRTesting from '../../assets/images/projects/ssi/SSI-FSRtesting.mp4';
+import vidAppCrypto from '../../assets/images/projects/ssi/SSI-appcryptodemo.mp4';
+import vidDemo from '../../assets/images/projects/ssi/SSI-demo.mp4';
+import vidDemoCharging from '../../assets/images/projects/ssi/SSI-democharging.mp4';
+import vidTestingFSR from '../../assets/images/projects/ssi/SSI-testingfsr.mp4';
+
 
 function SmartInsoleProject() {
   const images: ProjectImage[] = [
+    { src: vidDemo, caption: "Live demonstration of the smart insole in action.", type: 'video' },
+    { src: vidAppCrypto, caption: "Testing the Flutter app connectivity and data encryption.", type: 'video' },
+    { src: vidFSRTesting, caption: "Real-time FSR telemetry data streaming.", type: 'video' },
+    { src: vidTestingFSR, caption: "More extensive testing of FSR sensor response curves.", type: 'video' },
+    { src: vidDemoCharging, caption: "Demonstrating the battery charging circuit.", type: 'video' },
     { src: imgPlantar, caption: "Research on human plantar pressure distribution to optimize sensor placement." },
     { src: imgCadmodel, caption: "CAD model designed in SolidWorks for the custom ergonomic insole." },
     { src: img3dprinting, caption: "Slicing the 3D model for printing with flexible TPU filament." },

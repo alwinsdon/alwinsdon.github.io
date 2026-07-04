@@ -6,6 +6,8 @@ import balancingRobotThumb from '../assets/images/projects/sbr/SBR-finalpic.jpeg
 import roboticArmThumb from '../assets/images/projects/ora/ORA-roboticarm.jpg';
 import colorSortingThumb from '../assets/images/projects/csr/CSR - Sorting setup view.jpeg';
 import hovercraftThumb from '../assets/images/projects/hcp/HCP - front view.jpeg';
+import rcCarThumb from '../assets/images/projects/brc/BRC - car top view.jpeg';
+import foundryThumb from '../assets/images/projects/fp/FP - Cast mold.jpeg';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -42,6 +44,16 @@ function Project() {
                 <Link to="/project/autonomous-hovercraft"><img src={hovercraftThumb} className="zoom" alt="RC Hovercraft" width="100%"/></Link>
                 <Link to="/project/autonomous-hovercraft"><h2>RC Hovercraft</h2></Link>
                 <p>Designed and built a remote-controlled, propeller-driven hovercraft capable of maneuvering over obstacles and delivering a payload. Features custom balsa wood shrouds and an animal-themed aesthetic.</p>
+            </div>
+            <div className="project">
+                <Link to="/project/bluetooth-rc-car"><img src={rcCarThumb} className="zoom" alt="Bluetooth RC Car" width="100%"/></Link>
+                <Link to="/project/bluetooth-rc-car"><h2>Bluetooth RC Car</h2></Link>
+                <p>Engineered a fast remote-controlled vehicle using Arduino, an HC-05 Bluetooth module, and custom motor drivers. Operated entirely through a wireless smartphone application.</p>
+            </div>
+            <div className="project">
+                <Link to="/project/foundry-forging"><img src={foundryThumb} className="zoom" alt="Foundry & Forging" width="100%"/></Link>
+                <Link to="/project/foundry-forging"><h2>Foundry & Forging</h2></Link>
+                <p>Explored heavy manufacturing by casting a solid aluminum part from a green sand mold, forging and tempering a high-carbon steel chisel, and performing oxy-acetylene gas welding.</p>
             </div>
         </div>
     </div>

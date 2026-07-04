@@ -5,8 +5,11 @@ import imgGazebo from '../../assets/images/projects/ora/ORA-Gazebosim.jpg';
 import imgCadModel from '../../assets/images/projects/ora/ORA-cadmodel.jpg';
 import imgRoboticArm from '../../assets/images/projects/ora/ORA-roboticarm.jpg';
 
+import vidTesting from '../../assets/images/projects/ora/ORA-Testing.mp4';
+
 function OpenManipulatorProject() {
   const images: ProjectImage[] = [
+    { src: vidTesting, caption: "Testing the robotic arm with custom trajectories.", type: 'video' },
     { src: imgCadModel, caption: "CAD model defining the kinematic chain and joint limits." },
     { src: imgGazebo, caption: "Gazebo simulation environment verifying the URDF and MoveIt planning." },
     { src: imgRoboticArm, caption: "The physical OpenManipulator-X arm executing planned trajectories." }

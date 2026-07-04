@@ -11,8 +11,15 @@ import imgKalman from '../../assets/images/projects/sbr/SBR-kalmanfilterimu.png'
 import imgWire1 from '../../assets/images/projects/sbr/SBR-wireconnection2.jpeg';
 import imgWire2 from '../../assets/images/projects/sbr/SBR-wiresconnection.jpeg';
 
+import vidTestingDemo from '../../assets/images/projects/sbr/SBR-testingdemo.mp4';
+import vidPIDFix from '../../assets/images/projects/sbr/SBR-tryingtofixthepidvalues.mp4';
+import gifInverted from '../../assets/images/projects/sbr/SBR-inverted_pendulum.gif';
+
 function SelfBalancingRobotProject() {
   const images: ProjectImage[] = [
+    { src: vidTestingDemo, caption: "Successful testing demo of the self-balancing algorithm.", type: 'video' },
+    { src: vidPIDFix, caption: "Tuning and fixing PID values for optimal stability.", type: 'video' },
+    { src: gifInverted, caption: "Animation explaining inverted pendulum physics.", type: 'image' },
     { src: imgFBD, caption: "Free body diagram analyzing the inverted pendulum physics." },
     { src: imgCircuit, caption: "Custom circuit diagram designed for the motor drivers and Arduino." },
     { src: imgPCB, caption: "Assembling the components onto the custom perfboard PCB." },
