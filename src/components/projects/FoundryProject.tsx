@@ -34,8 +34,8 @@ function FoundryProject() {
 
   return (
     <ProjectDetail
-      title="Foundry, Forging & Welding"
-      timeline="2023"
+      title="Foundry"
+      timeline="2026"
       background="A hands-on manufacturing project exploring traditional metallurgical processes. The objective was to gain practical experience with green sand casting, blacksmithing/forging, and gas welding."
       description="Successfully completed a series of heavy manufacturing tasks. First, created a wooden pattern, packed a green sand mold, melted scrap aluminum in a crucible furnace, and poured a solid metal casting. Second, utilized a propane forge and anvil to heat, hammer, shape, and temper a high-carbon steel chisel. Finally, demonstrated proficiency in joining metals using oxy-acetylene gas welding."
       technologies={[
