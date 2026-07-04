@@ -15,7 +15,7 @@ function ColorSortingRobotProject() {
   return (
     <ProjectDetail
       title="Autonomous Color-Sorting Robot with Ignition HMI"
-      timeline="2025"
+      timeline="2026"
       background="This project was built to demonstrate end-to-end integration of robotics, computer vision, and industrial HMI design. The goal was to create a fully autonomous pick-and-place system that identifies colored blocks (blue, green, red, yellow) using a USB camera, picks them up with a 5-DOF Yahboom DOFBOT arm, and places them in a designated drop zone — all orchestrated through an Ignition Perspective HMI dashboard."
       description="Built an end-to-end robotic system combining computer vision, inverse kinematics, MQTT communication, and industrial HMI design. A Raspberry Pi bridge script receives commands from an Ignition Perspective dashboard, searches four corners of the workspace, visually identifies the requested color, picks the block, and places it in the center — all without human intervention. The system includes live status feedback and survived real-world failures including USB camera dropouts, I2C bus issues, and MoveIt planning dead-ends."
       technologies={[
