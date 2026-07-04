@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf7b670a.css",
-    "main.js": "/static/js/main.738cee19.js",
+    "main.css": "/static/css/main.31607eb6.css",
+    "main.js": "/static/js/main.eaf1a074.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/CSR- colour sorting demo backend.mp4": "/static/media/CSR- colour sorting demo backend.165a069ac8dd6b40cbac.mp4",
     "static/media/CSR- colour sorting demo frontend.mp4": "/static/media/CSR- colour sorting demo frontend.fd81bc1f8b58bfe650e4.mp4",
@@ -35,12 +35,12 @@
     "static/media/ORA-Gazebosim.jpg": "/static/media/ORA-Gazebosim.07c6ce4709ef9ca82346.jpg",
     "static/media/ORA-roboticarm.jpg": "/static/media/ORA-roboticarm.9f85a1b273ef3340bbca.jpg",
     "index.html": "/index.html",
-    "main.bf7b670a.css.map": "/static/css/main.bf7b670a.css.map",
-    "main.738cee19.js.map": "/static/js/main.738cee19.js.map",
+    "main.31607eb6.css.map": "/static/css/main.31607eb6.css.map",
+    "main.eaf1a074.js.map": "/static/js/main.eaf1a074.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf7b670a.css",
-    "static/js/main.738cee19.js"
+    "static/css/main.31607eb6.css",
+    "static/js/main.eaf1a074.js"
   ]
 }
