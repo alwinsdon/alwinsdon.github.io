@@ -3,6 +3,15 @@
     flex-direction: column;
     padding: 5% 10%;
     text-align: left;
+
+    h1 {
+        font-size: 3rem;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 0px #0f0, -2px -2px 0px #0ff, 0 0 15px rgba(255, 255, 255, 0.5);
+        margin-bottom: 40px;
+    }
 }
   
 .projects-container .projects-grid {
@@ -13,47 +22,104 @@
   
 .projects-container .projects-grid .project {
     text-align: left;
-    background: rgba(80, 0, 202, 0.05);
-    border: 1px solid rgba(80, 0, 202, 0.2);
-    border-radius: 15px;
+    background: rgba(10, 10, 12, 0.8);
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    border-radius: 8px;
     padding: 20px;
     transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.1), inset 0 0 15px rgba(255, 0, 255, 0.05);
     
     &:hover {
         transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(80, 0, 202, 0.4);
-        border-color: rgba(155, 81, 224, 0.6);
-        background: rgba(80, 0, 202, 0.1);
+        box-shadow: 0 0 25px rgba(0, 255, 255, 0.6), inset 0 0 20px rgba(255, 0, 255, 0.2);
+        border-color: #0ff;
+        background: rgba(10, 10, 12, 1);
     }
 
     a {
         text-decoration: none;
         color: inherit;
     }
+
+    p {
+        color: #ccc;
+        line-height: 1.6;
+        margin-top: 15px;
+    }
 }
   
 .project h2 {
     margin-top: 20px;
-    font-size: 1.5rem;
-    color: white;
-    transition: color 0.2s ease;
+    font-size: 1.8rem;
+    color: #f0f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px #f0f;
 }
 
-.project h2:hover {
-    color: #9b51e0;
+.project:hover h2 {
+    color: #fff;
+    text-shadow: 0 0 10px #f0f, 0 0 20px #f0f;
 }
   
 .zoom {
-    border-radius: 10px;
+    border-radius: 4px;
     width: 100%;
     height: 250px;
     object-fit: cover;
     transition: transform .3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid #5000ca;
+    box-shadow: 0 0 10px rgba(80, 0, 202, 0.5);
 }
   
 .project:hover .zoom {
-    transform: scale(1.02);
+    transform: scale(1.03);
+    border-color: #f0f;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
+}
+
+.light-mode {
+    .projects-container h1 {
+        color: #5000ca;
+        text-shadow: 3px 3px 0px rgba(0,0,0,0.1);
+    }
+
+    .projects-container .projects-grid .project {
+        background: #fff;
+        border-color: #ccc;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        
+        &:hover {
+            border-color: #5000ca;
+            box-shadow: 0 8px 15px rgba(80, 0, 202, 0.3);
+        }
+
+        p {
+            color: #333;
+        }
+    }
+
+    .project h2 {
+        color: #5000ca;
+        text-shadow: none;
+    }
+
+    .project:hover h2 {
+        color: #7000ff;
+        text-shadow: none;
+    }
+
+    .zoom {
+        border-color: #ddd;
+        box-shadow: none;
+    }
+
+    .project:hover .zoom {
+        border-color: #5000ca;
+        box-shadow: 0 8px 15px rgba(80, 0, 202, 0.3);
+    }
 }
 
 @media screen {
@@ -69,7 +135,7 @@
         }
       
         .projects-container .projects-grid .project {
-            padding-bottom: 5%;
+            margin-bottom: 5%;
         }
     }
 }

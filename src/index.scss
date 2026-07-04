@@ -1,11 +1,11 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.1rem !important;
+  background-color: #0a0a0c;
+  color: #e0e0e0;
 }
 
 code {
@@ -15,44 +15,61 @@ code {
 
 .main-container {
   position: relative;
-  background-color: #0d1116;
-
+  background-color: #0a0a0c;
 }
 
 a {
   text-decoration: none;
+  color: #0ff;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  color: #5000ca;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  color: #fff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
 }
 
-p, a, h1, h2, h3, h4, h5, label, button {
-  color: white;
-  font-family: "Lato", sans-serif;
+p, h1, h2, h3, h4, h5, label, button {
+  color: #e0e0e0;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .navigation-bar {
   justify-content: space-between;
-  background-color: #0d1116;
+  background-color: rgba(10, 10, 12, 0.9);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
 
   button {
     font-size: 1.1rem;
-    font-family: "Lato", sans-serif;
-    text-transform: initial;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #0ff;
     padding: 6px 10px;
+    text-shadow: 0 0 5px #0ff;
+    
+    &:hover {
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    }
   }
 
   svg {
     cursor: pointer;
+    color: #f0f;
+    filter: drop-shadow(0 0 5px #f0f);
+    
+    &:hover {
+      filter: drop-shadow(0 0 15px #f0f);
+    }
   }
 }
 
 .navigation-bar-responsive {
   span, p {
-    color: #0d1116;
-    font-family: "Lato", sans-serif;
+    color: #0ff;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
   }
 }
 
@@ -73,6 +90,7 @@ p, a, h1, h2, h3, h4, h5, label, button {
     width: 100%;
     height: 450px;
     object-fit: cover;
+    filter: contrast(1.2) saturate(1.5);
   }
 }
 
@@ -92,57 +110,36 @@ p, a, h1, h2, h3, h4, h5, label, button {
   justify-content: center;
 }
 
+// Light mode fallback (keeps cyberpunk feel but lighter)
 .light-mode {
-  background-color: #f8f9fa;
+  background-color: #f5f5fa;
+  color: #1a1a24;
 
-  .navigation-bar {
-    background-color: #f8f9fa;
+  .main-container, .navigation-bar {
+    background-color: #f5f5fa;
   }
 
-  p, a, h1, h2, h3, h4, h5, label, button {
-    color: #0d1116;
+  p, h1, h2, h3, h4, h5, label, button {
+    color: #1a1a24;
+  }
+
+  a {
+    color: #5000ca;
   }
 
   a:hover {
-    color: #5000ca;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    color: #7000ff;
+    text-shadow: none;
   }
 
   .navigation-bar svg {
-    color: #0d1116;
+    color: #5000ca;
+    filter: none;
   }
-
-  .about-section {
-    background-image: url("./assets/images/bg-light.png");
-  }
-
-  .skills-container svg {
-    color: #0d1116;
-  }
-
-  .chip {
-    background-color: rgba(0, 0, 0, 0.08);
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-  }
-
-  .vertical-timeline::before {
-    background-color: rgba(0, 0, 0, 0.08);
-  }
-
-  .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-  }
-
-  .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
-    color: gray;
-  }
-
-  .vertical-timeline-element-content-arrow {
-    border-right: 7px solid rgba(0, 0, 0, 0.08) !important;
-  }
-
-  .flex-chips .chip-title {
-    color: #0d1116;
+  
+  .navigation-bar button {
+    color: #5000ca;
+    text-shadow: none;
   }
 }
 
