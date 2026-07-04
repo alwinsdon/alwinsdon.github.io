@@ -248,11 +248,11 @@
     }
     
     .gallery-item {
-      img {
+      img, .gallery-video-thumb {
         border-color: #ddd;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       }
-      &:hover img {
+      &:hover img, &:hover .gallery-video-thumb {
         border-color: #5000ca;
         box-shadow: 0 8px 16px rgba(80,0,202,0.3);
       }
