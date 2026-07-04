@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import lawnmowerThumb from '../assets/images/projects/alm/ALM-frame.jpg';
+import lawnmowerThumb from '../assets/images/projects/alm/ALM-Publicdemo1.jpg';
 import insoleThumb from '../assets/images/projects/ssi/SSI-finalprototype.jpg';
 import balancingRobotThumb from '../assets/images/projects/sbr/SBR-finalpic.jpeg';
 import roboticArmThumb from '../assets/images/projects/ora/ORA-roboticarm.jpg';
