@@ -1,69 +1,79 @@
 .project-detail-container {
   min-height: 100vh;
   padding: 100px 20px 50px;
+  background-color: #0a0a0c;
+  color: #e0e0e0;
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
+  overflow: hidden;
   
   .project-detail-content {
     max-width: 900px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
   }
 
-  .back-button {
+  .back-button, .back-button-bottom {
     display: inline-block;
-    color: #5000ca;
+    color: #0ff;
     text-decoration: none;
     font-size: 16px;
     margin-bottom: 30px;
     transition: all 0.3s ease;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
     
     &:hover {
-      color: #7000ff;
+      color: #fff;
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
       transform: translateX(-5px);
     }
   }
 
   .back-button-bottom {
-    display: inline-block;
-    color: #5000ca;
-    text-decoration: none;
-    font-size: 16px;
     margin-top: 50px;
-    transition: all 0.3s ease;
-    
-    &:hover {
-      color: #7000ff;
-      transform: translateX(-5px);
-    }
   }
 
   .project-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 10px;
-    color: inherit;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0px #f0f, -2px -2px 0px #0ff, 0 0 15px rgba(255, 255, 255, 0.5);
   }
 
   .project-timeline {
     font-size: 1.1rem;
-    color: #888;
+    color: #0f0;
     margin-bottom: 40px;
-    font-style: italic;
+    text-shadow: 0 0 5px #0f0;
   }
 
   .project-section {
     margin-bottom: 40px;
+    background: rgba(10, 10, 12, 0.8);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1), inset 0 0 10px rgba(255, 0, 255, 0.05);
 
     h2 {
       font-size: 1.8rem;
       margin-bottom: 15px;
-      color: #5000ca;
-      border-bottom: 2px solid #5000ca;
+      color: #f0f;
+      border-bottom: 1px solid #f0f;
       padding-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-shadow: 0 0 8px #f0f;
     }
 
     p {
       font-size: 1.1rem;
       line-height: 1.8;
       margin-bottom: 15px;
-      color: inherit;
+      color: #ccc;
     }
   }
 
@@ -77,14 +87,16 @@
       padding-left: 30px;
       margin-bottom: 10px;
       position: relative;
+      color: #ddd;
       
       &:before {
-        content: "✓";
+        content: ">";
         position: absolute;
         left: 0;
-        color: #5000ca;
+        color: #0f0;
         font-weight: bold;
         font-size: 1.2rem;
+        text-shadow: 0 0 5px #0f0;
       }
     }
   }
@@ -92,48 +104,72 @@
   .tech-stack {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     margin-top: 20px;
   }
 
   .tech-badge {
-    background: #5000ca;
-    color: white;
+    background: transparent;
+    color: #0ff;
     padding: 8px 16px;
-    border-radius: 20px;
+    border: 1px solid #0ff;
+    border-radius: 4px;
     font-size: 0.95rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.3), inset 0 0 5px rgba(0, 255, 255, 0.3);
+    transition: all 0.2s ease;
 
     &:hover {
-      background: #7000ff;
+      background: #0ff;
+      color: #000;
+      box-shadow: 0 0 15px #0ff;
       transform: translateY(-2px);
     }
   }
 
   .project-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
     margin-top: 20px;
 
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
+    .gallery-item {
+      display: flex;
+      flex-direction: column;
+      
+      img {
+        width: 100%;
+        height: auto;
+        border: 2px solid #5000ca;
+        border-radius: 4px;
+        box-shadow: 0 0 10px rgba(80, 0, 202, 0.5);
+        transition: all 0.3s ease;
+      }
+      
+      &:hover img {
+        border-color: #0ff;
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+        transform: scale(1.02);
+      }
 
-      &:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      .gallery-caption {
+        margin-top: 15px;
+        color: #0f0;
+        font-size: 0.95rem;
+        text-align: center;
+        text-shadow: 0 0 3px #0f0;
+        background: rgba(0, 255, 0, 0.1);
+        padding: 8px;
+        border-radius: 2px;
+        border-left: 3px solid #0f0;
       }
     }
   }
 
   .project-links {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
     margin-top: 20px;
   }
@@ -141,79 +177,106 @@
   .project-link-button {
     display: inline-block;
     padding: 12px 24px;
-    background: #5000ca;
-    color: white;
+    background: transparent;
+    color: #f0f;
+    border: 2px solid #f0f;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 4px;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: bold;
+    text-transform: uppercase;
     transition: all 0.3s ease;
+    box-shadow: 0 0 8px rgba(255, 0, 255, 0.4), inset 0 0 8px rgba(255, 0, 255, 0.4);
     
     &:hover {
-      background: #7000ff;
+      background: rgba(255, 0, 255, 0.2);
+      box-shadow: 0 0 20px rgba(255, 0, 255, 0.8), inset 0 0 15px rgba(255, 0, 255, 0.6);
       transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(80, 0, 202, 0.3);
+      color: #fff;
+      text-shadow: 0 0 5px #fff;
     }
   }
 }
 
-// Dark mode specific styles
-.dark-mode {
-  .project-detail-container {
-    .project-title {
-      color: #fff;
-    }
-
-    .project-section {
-      p {
-        color: #ddd;
-      }
-    }
-
-    .features-list li {
-      color: #ddd;
-    }
-
-    .tech-badge {
-      background: #5000ca;
-      color: #fff;
-    }
-  }
-}
-
-// Light mode specific styles
+// Light mode override to keep cyberpunk feel slightly softer
 .light-mode {
   .project-detail-container {
-    .project-title {
-      color: #333;
-    }
-
-    .project-timeline {
-      color: #666;
-    }
-
+    background-color: #f5f5fa;
+    color: #1a1a24;
+    
     .project-section {
+      background: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      
       h2 {
         color: #5000ca;
+        border-bottom-color: #5000ca;
+        text-shadow: none;
       }
-
       p {
         color: #333;
       }
     }
 
+    .project-title {
+      color: #5000ca;
+      text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    }
+    
+    .project-timeline {
+      color: #d81b60;
+      text-shadow: none;
+    }
+    
     .features-list li {
       color: #333;
+      &:before {
+        color: #5000ca;
+        text-shadow: none;
+      }
     }
-
+    
     .tech-badge {
-      background: #5000ca;
-      color: #fff;
+      color: #5000ca;
+      border-color: #5000ca;
+      box-shadow: none;
+      &:hover {
+        background: #5000ca;
+        color: #fff;
+      }
+    }
+    
+    .gallery-item {
+      img {
+        border-color: #ddd;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      &:hover img {
+        border-color: #5000ca;
+        box-shadow: 0 8px 16px rgba(80,0,202,0.3);
+      }
+      .gallery-caption {
+        color: #333;
+        background: #f0f0f5;
+        border-left-color: #5000ca;
+        text-shadow: none;
+      }
+    }
+    
+    .project-link-button {
+      color: #5000ca;
+      border-color: #5000ca;
+      box-shadow: none;
+      &:hover {
+        background: #5000ca;
+        color: #fff;
+        box-shadow: 0 4px 12px rgba(80,0,202,0.4);
+      }
     }
   }
 }
 
-// Responsive design
 @media (max-width: 768px) {
   .project-detail-container {
     padding: 80px 15px 30px;
@@ -226,23 +289,10 @@
       h2 {
         font-size: 1.5rem;
       }
-
-      p {
-        font-size: 1rem;
-      }
     }
 
     .project-gallery {
       grid-template-columns: 1fr;
     }
-
-    .project-links {
-      flex-direction: column;
-      
-      .project-link-button {
-        text-align: center;
-      }
-    }
   }
 }
-

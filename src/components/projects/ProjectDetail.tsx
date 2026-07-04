@@ -2,6 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../../assets/styles/ProjectDetail.scss';
 
+export interface ProjectImage {
+  src: string;
+  caption: string;
+}
+
 interface ProjectDetailProps {
   title: string;
   timeline: string;
@@ -9,7 +14,7 @@ interface ProjectDetailProps {
   description: string;
   technologies: string[];
   features?: string[];
-  images?: string[];
+  images?: ProjectImage[];
   githubLink?: string;
   liveLink?: string;
   children?: React.ReactNode;
@@ -72,7 +77,10 @@ function ProjectDetail({
             <h2>Gallery</h2>
             <div className="project-gallery">
               {images.map((image, index) => (
-                <img key={index} src={image} alt={`${title} screenshot ${index + 1}`} />
+                <div key={index} className="gallery-item">
+                  <img src={image.src} alt={`${title} screenshot ${index + 1}`} />
+                  <p className="gallery-caption">{image.caption}</p>
+                </div>
               ))}
             </div>
           </section>

@@ -1,12 +1,23 @@
 import React from "react";
-import ProjectDetail from "./ProjectDetail";
-import hcpFront from '../../assets/images/projects/hcp/HCP - front view.jpeg';
+import ProjectDetail, { ProjectImage } from "./ProjectDetail";
+
+import hcpAngle from '../../assets/images/projects/hcp/HCP - Angle view.jpeg';
 import hcpCircuit from '../../assets/images/projects/hcp/HCP - Circuit diagram.jpeg';
+import hcpFront from '../../assets/images/projects/hcp/HCP - front view.jpeg';
 import hcpMotor from '../../assets/images/projects/hcp/HCP- motor used.jpeg';
 import hcpServo from '../../assets/images/projects/hcp/HCP- servo and motor used.jpeg';
 import hcpTransmitter from '../../assets/images/projects/hcp/HCP - Transmitter.jpeg';
 
 function HovercraftProject() {
+  const images: ProjectImage[] = [
+    { src: hcpAngle, caption: "Angled profile shot showcasing the custom balsa wood shrouds." },
+    { src: hcpFront, caption: "Front view highlighting the lift mechanism and aerodynamic design." },
+    { src: hcpCircuit, caption: "Detailed circuit diagram for the electronic speed controllers and servos." },
+    { src: hcpMotor, caption: "Close-up of the high-RPM brushless motor used for lift and propulsion." },
+    { src: hcpServo, caption: "Servo motor assembly used for precise rudder control." },
+    { src: hcpTransmitter, caption: "Spektrum DX8E transmitter used for remote teleoperation." }
+  ];
+
   return (
     <ProjectDetail
       title="RC Hovercraft"
@@ -31,7 +42,7 @@ function HovercraftProject() {
         "Kept under 800g maximum vehicle mass limit",
         "Developed comprehensive manufacturing plan and weight/cost estimates"
       ]}
-      images={[hcpFront, hcpCircuit, hcpMotor, hcpServo, hcpTransmitter]}
+      images={images}
       githubLink="https://github.com/alwinsdon"
     />
   );

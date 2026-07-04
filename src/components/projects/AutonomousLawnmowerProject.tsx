@@ -1,53 +1,71 @@
 import React from "react";
-import ProjectDetail from "./ProjectDetail";
-import almFrame from '../../assets/images/projects/alm/ALM-frame.jpg';
-import almWeldingFrame from '../../assets/images/projects/alm/ALM-weldingframe.jpg';
-import almSlam from '../../assets/images/projects/alm/ALM-slam.jpeg';
-import almLidar from '../../assets/images/projects/alm/ALM-Lidar.jpg';
-import almPublicDemo from '../../assets/images/projects/alm/ALM-Publicdemo1.jpg';
-import almPlan from '../../assets/images/projects/alm/ALM-plan1.jpg';
+import ProjectDetail, { ProjectImage } from "./ProjectDetail";
+
+import imgLidar from '../../assets/images/projects/alm/ALM-Lidar.jpg';
+import imgPublicdemo1 from '../../assets/images/projects/alm/ALM-Publicdemo1.jpg';
+import imgPublicdemo2 from '../../assets/images/projects/alm/ALM-Publicdemo2.jpg';
+import imgPublicdemo3 from '../../assets/images/projects/alm/ALM-Publicdemo3.jpg';
+import imgCadModel from '../../assets/images/projects/alm/ALM-cad-model.png';
+import imgCadModel2 from '../../assets/images/projects/alm/ALM-cad-model2.png';
+import imgChoosingLidars from '../../assets/images/projects/alm/ALM-choosinglidars.jpg';
+import imgEncoderReading from '../../assets/images/projects/alm/ALM-encoderreading.jpg';
+import imgFrame from '../../assets/images/projects/alm/ALM-frame.jpg';
+import imgPlan1 from '../../assets/images/projects/alm/ALM-plan1.jpg';
+import imgPlan2 from '../../assets/images/projects/alm/ALM-plan2.jpg';
+import imgPlan3 from '../../assets/images/projects/alm/ALM-plan3.jpg';
+import imgPlan4 from '../../assets/images/projects/alm/ALM-plan4.jpg';
+import imgPlan5 from '../../assets/images/projects/alm/ALM-plan5.jpg';
+import imgRoboclawTest from '../../assets/images/projects/alm/ALM-roboclawtest.jpg';
+import imgSlam from '../../assets/images/projects/alm/ALM-slam.jpeg';
+import imgWeldingFrame from '../../assets/images/projects/alm/ALM-weldingframe.jpg';
 
 function AutonomousLawnmowerProject() {
+  const images: ProjectImage[] = [
+    { src: imgPlan1, caption: "Initial conceptual sketch and blueprint planning." },
+    { src: imgPlan2, caption: "Detailed system architecture and wiring diagram layout." },
+    { src: imgPlan3, caption: "Hardware integration plan for sensors and motor controllers." },
+    { src: imgPlan4, caption: "Software node planning for ROS integration." },
+    { src: imgPlan5, caption: "Finalized design schematics before construction." },
+    { src: imgCadModel, caption: "3D CAD model showcasing the chassis design." },
+    { src: imgCadModel2, caption: "Alternative angle of the CAD model highlighting sensor placement." },
+    { src: imgWeldingFrame, caption: "Fabrication process: welding the robust metal frame." },
+    { src: imgFrame, caption: "The completed raw metal frame structure." },
+    { src: imgChoosingLidars, caption: "Evaluating different LiDAR sensors for optimal mapping." },
+    { src: imgLidar, caption: "The selected LiDAR module mounted and ready for testing." },
+    { src: imgEncoderReading, caption: "Testing and calibrating wheel encoder telemetry." },
+    { src: imgRoboclawTest, caption: "Initial diagnostics on the RoboClaw motor controller." },
+    { src: imgSlam, caption: "Successful SLAM mapping generated during a test run." },
+    { src: imgPublicdemo1, caption: "The fully assembled autonomous lawnmower in action." },
+    { src: imgPublicdemo2, caption: "Showcasing the robot to the public during a live demonstration." },
+    { src: imgPublicdemo3, caption: "Another view of the successful public demo event." }
+  ];
+
   return (
     <ProjectDetail
-      title="Autonomous Lawnmower"
-      timeline="2024 - Present"
-      background="This project was inspired by the need for an affordable, autonomous lawn maintenance solution for residential yards. The goal was to retrofit a standard push mower into an intelligent, all-terrain autonomous platform capable of handling uneven ground and obstacles while keeping production costs under $1,000."
-      description="Designed and built a 200+ lb autonomous robotic platform featuring tank tracks for superior terrain handling and obstacle navigation. The system integrates advanced robotics technologies including ROS-based navigation, SLAM mapping, YOLO object detection, and LiDAR-camera sensor fusion to achieve reliable autonomous operation in complex outdoor environments."
+      title="Autonomous Lawnmower (ROS 2)"
+      timeline="2023 - 2024"
+      background="Designed and built a fully autonomous robotic lawnmower from scratch. The goal was to create a robust outdoor mobile robot capable of navigating unstructured environments, mapping its surroundings, and performing autonomous coverage."
+      description="Engineered a custom differential drive robot using a welded aluminum chassis, wheelchair motors, and a RoboClaw motor controller. The software stack was built on ROS 2 (Humble) running on a Jetson Orin Nano, utilizing 2D LiDAR (RPLidar) and an IMU for SLAM (Cartographer) and autonomous navigation (Nav2)."
       technologies={[
-        "ROS (Robot Operating System)",
-        "Python",
-        "C++",
-        "Arduino",
-        "Raspberry Pi",
-        "LiDAR",
-        "Camera Vision",
-        "GPS",
-        "IMU",
-        "YOLO Object Detection",
-        "SLAM Mapping",
-        "Autodesk Inventor",
-        "RoboClaw Motor Controller"
+        "ROS 2 (Humble)",
+        "Nav2 & Cartographer",
+        "Python & C++",
+        "Jetson Orin Nano",
+        "LiDAR & IMU",
+        "RoboClaw Motor Controller",
+        "SolidWorks",
+        "MIG Welding"
       ]}
       features={[
-        "Tank-track chassis design for all-terrain capability",
-        "Dual-motor differential drive system",
-        "ROS-based teleoperation and autonomous navigation",
-        "SLAM mapping for environment understanding (~70% complete)",
-        "YOLO-based object detection for obstacle recognition",
-        "LiDAR-camera sensor fusion for enhanced perception",
-        "GPS + IMU integration for positioning and stability",
-        "200 lb base weight with 100-200 lb payload capacity",
-        "Top speed of 28 km/h",
-        "Approximately 5-hour battery runtime",
-        "Steel fabricated chassis with custom CAD design"
+        "Autonomous navigation in outdoor environments using Nav2",
+        "Real-time 2D mapping and localization with Cartographer SLAM",
+        "Custom differential drive kinematics with closed-loop PID control",
+        "Robust welded chassis capable of carrying a 50lb payload"
       ]}
-      images={[almFrame, almWeldingFrame, almSlam, almLidar, almPublicDemo, almPlan]}
-      githubLink="https://github.com/alwinsdon"
+      images={images}
+      githubLink="https://github.com/alwinsdon/autonomous-lawnmower"
     />
   );
 }
 
 export default AutonomousLawnmowerProject;
-
-

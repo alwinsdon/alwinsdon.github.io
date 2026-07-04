@@ -1,51 +1,53 @@
 import React from "react";
-import ProjectDetail from "./ProjectDetail";
-import sbrFinalPic from '../../assets/images/projects/sbr/SBR-finalpic.jpeg';
-import sbrInvertedPendulum from '../../assets/images/projects/sbr/SBR-inverted_pendulum.gif';
-import sbrPidAlgo from '../../assets/images/projects/sbr/SBR-PIDalgo.png';
-import sbrKalmanFilter from '../../assets/images/projects/sbr/SBR-kalmanfilterimu.png';
-import sbrPcb from '../../assets/images/projects/sbr/SBR-PCB.jpeg';
+import ProjectDetail, { ProjectImage } from "./ProjectDetail";
+
+import imgCircuit from '../../assets/images/projects/sbr/SBR-Circuitdiagram.png';
+import imgFBD from '../../assets/images/projects/sbr/SBR-Freebodydiagram.png';
+import imgPCB from '../../assets/images/projects/sbr/SBR-PCB.jpeg';
+import imgPID from '../../assets/images/projects/sbr/SBR-PIDalgo.png';
+import imgCharging from '../../assets/images/projects/sbr/SBR-charging12vlipo.jpeg';
+import imgFinalPic from '../../assets/images/projects/sbr/SBR-finalpic.jpeg';
+import imgKalman from '../../assets/images/projects/sbr/SBR-kalmanfilterimu.png';
+import imgWire1 from '../../assets/images/projects/sbr/SBR-wireconnection2.jpeg';
+import imgWire2 from '../../assets/images/projects/sbr/SBR-wiresconnection.jpeg';
 
 function SelfBalancingRobotProject() {
+  const images: ProjectImage[] = [
+    { src: imgFBD, caption: "Free body diagram analyzing the inverted pendulum physics." },
+    { src: imgCircuit, caption: "Custom circuit diagram designed for the motor drivers and Arduino." },
+    { src: imgPCB, caption: "Assembling the components onto the custom perfboard PCB." },
+    { src: imgWire2, caption: "Wiring the stepper motors to the motor driver modules." },
+    { src: imgWire1, caption: "Connecting the MPU6050 IMU for precise tilt measurements." },
+    { src: imgCharging, caption: "Charging the 12V LiPo battery pack used to power the system." },
+    { src: imgKalman, caption: "Kalman filter implementation logic for noise reduction on the IMU." },
+    { src: imgPID, caption: "The PID control algorithm structure used to calculate motor response." },
+    { src: imgFinalPic, caption: "The finalized self-balancing robot successfully maintaining its upright position." }
+  ];
+
   return (
     <ProjectDetail
       title="Self-Balancing Robot"
-      timeline="2024"
-      background="This project was undertaken to deeply understand control systems theory and real-time embedded programming. The self-balancing robot serves as an excellent testbed for PID control, sensor fusion, and system dynamics. The goal was to design and build a robot that could maintain upright balance autonomously, recovering from disturbances and demonstrating stable control performance."
-      description="Designed and constructed a two-wheeled self-balancing robot featuring a custom MIG-welded metal chassis, Arduino-based control system, and Kalman-filtered IMU sensor fusion. Implemented PID control algorithms to maintain vertical stability, achieving 3-5 minutes of continuous balancing with the ability to compensate for tilt disturbances up to 10 degrees. The project included both hardware fabrication and software simulation for controller tuning."
+      timeline="2023"
+      background="Fascinated by control theory and inverted pendulum physics, I set out to build a two-wheeled self-balancing robot. This project served as a deep dive into sensor fusion, PID controllers, and raw Arduino programming."
+      description="Engineered a two-wheeled robot that uses an MPU6050 IMU to measure tilt angles and NEMA 17 stepper motors for rapid counter-movements. Implemented a Kalman Filter in C++ to smooth noisy accelerometer and gyroscope data. Developed a custom PID loop to calculate the exact motor speeds required to maintain a perfect center of gravity."
       technologies={[
+        "C++",
         "Arduino",
-        "C/C++",
-        "Python",
-        "MATLAB",
-        "MPU-6050 IMU",
-        "Kalman Filter",
         "PID Control",
-        "Pygame (Simulation)",
-        "DC Motors",
-        "Encoder Feedback",
-        "Bluetooth Telemetry",
-        "MIG Welding",
-        "Metal Fabrication"
+        "Kalman Filter",
+        "MPU6050 IMU",
+        "Stepper Motors"
       ]}
       features={[
-        "Custom MIG-welded metal frame for structural rigidity",
-        "Kalman filter-based IMU data fusion for accurate tilt measurement",
-        "PID control loop running at high frequency (~100Hz) for responsive balancing",
-        "Dual DC motors with encoder feedback for precise wheel control",
-        "Bluetooth wireless telemetry for real-time monitoring and tuning",
-        "Pygame-based simulation environment for controller development",
-        "MATLAB/Python tools for PID parameter tuning and analysis",
-        "Balances for 3-5 minutes continuously",
-        "Compensates for external disturbances up to 10° tilt",
-        "Autonomous self-recovery from mild pushes"
+        "Custom PID control loop running at high frequency to maintain stability.",
+        "Implementation of a Kalman filter to fuse accelerometer and gyroscope data.",
+        "Precise motor control using NEMA 17 stepper motors and A4988 drivers.",
+        "Custom soldered PCB integrating the microcontroller, IMU, and motor drivers."
       ]}
-      images={[sbrFinalPic, sbrInvertedPendulum, sbrPidAlgo, sbrKalmanFilter, sbrPcb]}
+      images={images}
       githubLink="https://github.com/alwinsdon"
     />
   );
 }
 
 export default SelfBalancingRobotProject;
-
-
