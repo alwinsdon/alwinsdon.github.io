@@ -1,10 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.31607eb6.css",
-    "main.js": "/static/js/main.eaf1a074.js",
+    "main.css": "/static/css/main.39f2fc59.css",
+    "main.js": "/static/js/main.37557f29.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
-    "static/media/CSR- colour sorting demo backend.mp4": "/static/media/CSR- colour sorting demo backend.165a069ac8dd6b40cbac.mp4",
-    "static/media/CSR- colour sorting demo frontend.mp4": "/static/media/CSR- colour sorting demo frontend.fd81bc1f8b58bfe650e4.mp4",
     "static/media/SSI-Publicdemo1.jpg": "/static/media/SSI-Publicdemo1.26959938050a016d2a08.jpg",
     "static/media/ALM-Publicdemo1.jpg": "/static/media/ALM-Publicdemo1.8da2bb74a3930beb7769.jpg",
     "static/media/ALM-Lidar.jpg": "/static/media/ALM-Lidar.b4d970fc2db82c00d3a8.jpg",
@@ -35,12 +33,12 @@
     "static/media/ORA-Gazebosim.jpg": "/static/media/ORA-Gazebosim.07c6ce4709ef9ca82346.jpg",
     "static/media/ORA-roboticarm.jpg": "/static/media/ORA-roboticarm.9f85a1b273ef3340bbca.jpg",
     "index.html": "/index.html",
-    "main.31607eb6.css.map": "/static/css/main.31607eb6.css.map",
-    "main.eaf1a074.js.map": "/static/js/main.eaf1a074.js.map",
+    "main.39f2fc59.css.map": "/static/css/main.39f2fc59.css.map",
+    "main.37557f29.js.map": "/static/js/main.37557f29.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31607eb6.css",
-    "static/js/main.eaf1a074.js"
+    "static/css/main.39f2fc59.css",
+    "static/js/main.37557f29.js"
   ]
 }
