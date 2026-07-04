@@ -224,6 +224,16 @@
       text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
     }
     
+    .back-button, .back-button-bottom {
+      color: #5000ca;
+      text-shadow: none;
+      
+      &:hover {
+        color: #7000ff;
+        text-shadow: none;
+      }
+    }
+    
     .project-timeline {
       color: #d81b60;
       text-shadow: none;
