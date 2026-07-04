@@ -1,6 +1,11 @@
 import React from "react";
 import ProjectDetail from "./ProjectDetail";
-import mock10 from '../../assets/images/mock10.png';
+import almFrame from '../../assets/images/projects/alm/ALM-frame.jpg';
+import almWeldingFrame from '../../assets/images/projects/alm/ALM-weldingframe.jpg';
+import almSlam from '../../assets/images/projects/alm/ALM-slam.jpeg';
+import almLidar from '../../assets/images/projects/alm/ALM-Lidar.jpg';
+import almPublicDemo from '../../assets/images/projects/alm/ALM-Publicdemo1.jpg';
+import almPlan from '../../assets/images/projects/alm/ALM-plan1.jpg';
 
 function AutonomousLawnmowerProject() {
   return (
@@ -37,7 +42,7 @@ function AutonomousLawnmowerProject() {
         "Approximately 5-hour battery runtime",
         "Steel fabricated chassis with custom CAD design"
       ]}
-      images={[mock10]}
+      images={[almFrame, almWeldingFrame, almSlam, almLidar, almPublicDemo, almPlan]}
       githubLink="https://github.com/alwinsdon"
       liveLink="#"
     >

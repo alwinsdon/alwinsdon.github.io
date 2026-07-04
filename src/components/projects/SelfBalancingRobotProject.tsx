@@ -1,6 +1,10 @@
 import React from "react";
 import ProjectDetail from "./ProjectDetail";
-import mock08 from '../../assets/images/mock08.png';
+import sbrFinalPic from '../../assets/images/projects/sbr/SBR-finalpic.jpeg';
+import sbrInvertedPendulum from '../../assets/images/projects/sbr/SBR-inverted_pendulum.gif';
+import sbrPidAlgo from '../../assets/images/projects/sbr/SBR-PIDalgo.png';
+import sbrKalmanFilter from '../../assets/images/projects/sbr/SBR-kalmanfilterimu.png';
+import sbrPcb from '../../assets/images/projects/sbr/SBR-PCB.jpeg';
 
 function SelfBalancingRobotProject() {
   return (
@@ -36,7 +40,7 @@ function SelfBalancingRobotProject() {
         "Compensates for external disturbances up to 10° tilt",
         "Autonomous self-recovery from mild pushes"
       ]}
-      images={[mock08]}
+      images={[sbrFinalPic, sbrInvertedPendulum, sbrPidAlgo, sbrKalmanFilter, sbrPcb]}
       githubLink="https://github.com/alwinsdon"
       liveLink="#"
     >

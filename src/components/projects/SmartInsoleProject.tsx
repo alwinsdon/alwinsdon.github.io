@@ -1,6 +1,10 @@
 import React from "react";
 import ProjectDetail from "./ProjectDetail";
-import mock09 from '../../assets/images/mock09.png';
+import ssiFinalPrototype from '../../assets/images/projects/ssi/SSI-finalprototype.jpg';
+import ssiCadModel from '../../assets/images/projects/ssi/SSI-cadmodel.png';
+import ssiPlantarDistribution from '../../assets/images/projects/ssi/SSI-plantardistribution.png';
+import ssiPublicDemo from '../../assets/images/projects/ssi/SSI-Publicdemo1.jpg';
+import ssiCompPlacement from '../../assets/images/projects/ssi/SSI-compplacement.jpg';
 
 function SmartInsoleProject() {
   return (
@@ -37,7 +41,7 @@ function SmartInsoleProject() {
         "Sensor fusion algorithms for improved accuracy",
         "Real-time data transmission to mobile app/cloud"
       ]}
-      images={[mock09]}
+      images={[ssiFinalPrototype, ssiCadModel, ssiPlantarDistribution, ssiPublicDemo, ssiCompPlacement]}
       githubLink="https://github.com/alwinsdon"
       liveLink="#"
     >
@@ -115,7 +119,7 @@ function SmartInsoleProject() {
         <ul className="features-list">
           <li>Step counting accuracy: 75-80% validated across 5 field tests</li>
           <li>Battery runtime: Approximately 5 hours of continuous use</li>
-          <li>Haptic latency: Zero-latency feedback (< 10ms response time)</li>
+          <li>Haptic latency: Zero-latency feedback (under 10ms response time)</li>
           <li>Wireless range: 10+ meters (Bluetooth), longer with Wi-Fi</li>
           <li>Anti-cheat detection: Successfully identifies fake step patterns</li>
           <li>Form factor: Slim enough to fit comfortably inside standard shoes</li>

@@ -1,6 +1,8 @@
 import React from "react";
 import ProjectDetail from "./ProjectDetail";
-import mock07 from '../../assets/images/mock07.png';
+import oraRoboticArm from '../../assets/images/projects/ora/ORA-roboticarm.jpg';
+import oraCadModel from '../../assets/images/projects/ora/ORA-cadmodel.jpg';
+import oraGazeboSim from '../../assets/images/projects/ora/ORA-Gazebosim.jpg';
 
 function OpenManipulatorProject() {
   return (
@@ -38,7 +40,7 @@ function OpenManipulatorProject() {
         "Validated pick-and-place operations in simulation and hardware",
         "Python and C++ API for programming manipulation tasks"
       ]}
-      images={[mock07]}
+      images={[oraRoboticArm, oraCadModel, oraGazeboSim]}
       githubLink="https://github.com/alwinsdon"
       liveLink="#"
     >
@@ -153,7 +155,7 @@ function OpenManipulatorProject() {
           <li><strong>Payload Capacity:</strong> Approximately 1 kg</li>
           <li><strong>Reach:</strong> ~50 cm workspace radius</li>
           <li><strong>Positioning Accuracy:</strong> ±5 mm (dependent on calibration and servo quality)</li>
-          <li><strong>Motion Planning Success Rate:</strong> >95% in uncluttered environments</li>
+          <li><strong>Motion Planning Success Rate:</strong> over 95% in uncluttered environments</li>
           <li><strong>Task Execution:</strong> Pick-and-place validated in simulation and hardware</li>
         </ul>
       </section>
