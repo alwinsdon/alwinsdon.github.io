@@ -7,7 +7,7 @@ import roboticArmThumb from '../assets/images/projects/ora/ORA-roboticarm.jpg';
 import colorSortingThumb from '../assets/images/projects/csr/CSR - Sorting setup view.jpeg';
 import hovercraftThumb from '../assets/images/projects/hcp/HCP - front view.jpeg';
 import rcCarThumb from '../assets/images/projects/brc/BRC - car top view.jpeg';
-import foundryThumb from '../assets/images/projects/fp/FP - Cast mold.jpeg';
+import foundryThumb from '../assets/images/projects/fp/FP - Final cast.jpeg';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -51,8 +51,8 @@ function Project() {
                 <p>Engineered a fast remote-controlled vehicle using Arduino, an HC-05 Bluetooth module, and custom motor drivers. Operated entirely through a wireless smartphone application.</p>
             </div>
             <div className="project">
-                <Link to="/project/foundry-forging"><img src={foundryThumb} className="zoom" alt="Foundry & Forging" width="100%"/></Link>
-                <Link to="/project/foundry-forging"><h2>Foundry & Forging</h2></Link>
+                <Link to="/project/foundry-forging"><img src={foundryThumb} className="zoom" alt="Foundry" width="100%"/></Link>
+                <Link to="/project/foundry-forging"><h2>Foundry</h2></Link>
                 <p>Explored heavy manufacturing by casting a solid aluminum part from a green sand mold, forging and tempering a high-carbon steel chisel, and performing oxy-acetylene gas welding.</p>
             </div>
         </div>
