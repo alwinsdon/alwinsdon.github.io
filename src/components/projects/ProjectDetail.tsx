@@ -47,7 +47,7 @@ function ProjectDetail({
 
         {features && features.length > 0 && (
           <section className="project-section">
-            <h2>Key Features</h2>
+            <h2>Results</h2>
             <ul className="features-list">
               {features.map((feature, index) => (
                 <li key={index}>{feature}</li>
