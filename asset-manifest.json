@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.467f826e.css",
+    "main.css": "/static/css/main.ac0ff1f0.css",
     "main.js": "/static/js/main.c61fee26.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/SSI-Publicdemo1.jpg": "/static/media/SSI-Publicdemo1.26959938050a016d2a08.jpg",
@@ -23,9 +23,7 @@
     "static/media/ALM-plan4.jpg": "/static/media/ALM-plan4.cb29886bb4bcf48a205e.jpg",
     "static/media/ALM-plan2.jpg": "/static/media/ALM-plan2.d41051562a3d786aa172.jpg",
     "static/media/SSI-testingfsr.jpg": "/static/media/SSI-testingfsr.ebf1dfca4f6936c323b8.jpg",
-    "static/media/bg-light.png": "/static/media/bg-light.bac0efb485244a522981.png",
     "static/media/SSI-sensorconnection.jpg": "/static/media/SSI-sensorconnection.afbbd39ee43c9c4e2121.jpg",
-    "static/media/bg-dark.png": "/static/media/bg-dark.f420c6b8458af72de935.png",
     "static/media/SSI-compplacement.jpg": "/static/media/SSI-compplacement.e403157d7dc60e35aa76.jpg",
     "static/media/SSI-finalprototype.jpg": "/static/media/SSI-finalprototype.c80ed994721dc3078d5d.jpg",
     "static/media/SSI-Prototype1.jpg": "/static/media/SSI-Prototype1.e9bd9c372d923f99e82a.jpg",
@@ -62,12 +60,12 @@
     "static/media/SBR-Circuitdiagram.png": "/static/media/SBR-Circuitdiagram.e046ce3a698992885d44.png",
     "static/media/SBR-Freebodydiagram.png": "/static/media/SBR-Freebodydiagram.95bc48631c26bc46a369.png",
     "index.html": "/index.html",
-    "main.467f826e.css.map": "/static/css/main.467f826e.css.map",
+    "main.ac0ff1f0.css.map": "/static/css/main.ac0ff1f0.css.map",
     "main.c61fee26.js.map": "/static/js/main.c61fee26.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.467f826e.css",
+    "static/css/main.ac0ff1f0.css",
     "static/js/main.c61fee26.js"
   ]
 }
