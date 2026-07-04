@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectDetail from "./ProjectDetail";
-import hcpAngle from '../../assets/images/projects/hcp/HCP - Angle view.jpeg';
 import hcpFront from '../../assets/images/projects/hcp/HCP - front view.jpeg';
 import hcpCircuit from '../../assets/images/projects/hcp/HCP - Circuit diagram.jpeg';
 import hcpMotor from '../../assets/images/projects/hcp/HCP- motor used.jpeg';
@@ -32,7 +31,7 @@ function HovercraftProject() {
         "Kept under 800g maximum vehicle mass limit",
         "Developed comprehensive manufacturing plan and weight/cost estimates"
       ]}
-      images={[hcpAngle, hcpFront, hcpCircuit, hcpMotor, hcpServo, hcpTransmitter]}
+      images={[hcpFront, hcpCircuit, hcpMotor, hcpServo, hcpTransmitter]}
       githubLink="https://github.com/alwinsdon"
     />
   );

@@ -5,7 +5,7 @@ import insoleThumb from '../assets/images/projects/ssi/SSI-finalprototype.jpg';
 import balancingRobotThumb from '../assets/images/projects/sbr/SBR-finalpic.jpeg';
 import roboticArmThumb from '../assets/images/projects/ora/ORA-roboticarm.jpg';
 import colorSortingThumb from '../assets/images/projects/csr/CSR - Sorting setup view.jpeg';
-import hovercraftThumb from '../assets/images/projects/hcp/HCP - Angle view.jpeg';
+import hovercraftThumb from '../assets/images/projects/hcp/HCP - front view.jpeg';
 import '../assets/styles/Project.scss';
 
 function Project() {
