@@ -3,7 +3,6 @@ import {
   Main,
   Expertise,
   Project,
-  Contact,
 } from "../components";
 import FadeIn from '../components/FadeIn';
 
@@ -13,7 +12,6 @@ function HomePage() {
       <Main/>
       <Expertise/>
       <Project/>
-      <Contact/>
     </FadeIn>
   );
 }

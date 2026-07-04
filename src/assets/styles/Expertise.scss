@@ -20,19 +20,28 @@
     text-align: left;
 }
   
-.chip {
-    color: rgb(39, 40, 34) !important;
-    background-color: white !important;
-    font-size: 0.8rem !important;
-    height: 25px !important;
-  
-    span {
-        font-family: 'Courier Prime', monospace;
-        color: rgb(39, 40, 34);
-    }
-  
-    svg {
-        height: 15px !important;
+.fancy-tech-tag {
+    display: inline-block;
+    margin: 4px 6px 4px 0;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    font-family: 'Courier Prime', monospace;
+    font-weight: bold;
+    color: white;
+    background: rgba(80, 0, 202, 0.2);
+    border: 1px solid rgba(80, 0, 202, 0.6);
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px rgba(80, 0, 202, 0.3);
+
+    &:hover {
+        background: rgba(155, 81, 224, 0.8);
+        border-color: #fff;
+        box-shadow: 0 0 15px rgba(155, 81, 224, 0.8);
+        transform: translateY(-2px);
+        color: white;
     }
 }
 
@@ -44,20 +53,6 @@
         color: white;
         padding-right: 10px;
     }
-}
-
-.flex-chips .MuiChip-root {
-    margin-right: 0.5em;
-}
-
-.flex-chips .MuiChip-outlined {
-    background-color: #e0e0e0;
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
-}
-
-.flex-chips .MuiChip-outlined span {
-    color: rgb(39, 40, 34);
 }
 
 @media screen {
