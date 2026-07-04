@@ -39,8 +39,8 @@ function Project() {
                 <p>Built an end-to-end pick-and-place system with OpenCV color detection, a 5-DOF DOFBOT arm, and an Ignition Perspective HMI dashboard. Autonomous sorting controlled via MQTT with live status feedback.</p>
             </div>
             <div className="project">
-                <Link to="/project/autonomous-hovercraft"><img src={hovercraftThumb} className="zoom" alt="Autonomous Hovercraft" width="100%"/></Link>
-                <Link to="/project/autonomous-hovercraft"><h2>Autonomous Hovercraft</h2></Link>
+                <Link to="/project/autonomous-hovercraft"><img src={hovercraftThumb} className="zoom" alt="RC Hovercraft" width="100%"/></Link>
+                <Link to="/project/autonomous-hovercraft"><h2>RC Hovercraft</h2></Link>
                 <p>Designed and built a remote-controlled, propeller-driven hovercraft capable of maneuvering over obstacles and delivering a payload. Features custom balsa wood shrouds and an animal-themed aesthetic.</p>
             </div>
         </div>

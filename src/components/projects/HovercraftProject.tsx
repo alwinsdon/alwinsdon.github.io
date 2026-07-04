@@ -9,7 +9,7 @@ import hcpTransmitter from '../../assets/images/projects/hcp/HCP - Transmitter.j
 function HovercraftProject() {
   return (
     <ProjectDetail
-      title="Autonomous Hovercraft"
+      title="RC Hovercraft"
       timeline="Spring 2025"
       background="Designed and constructed a hovercraft capable of gliding and maneuvering along the ground to complete an obstacle course for ENGR 11002. Requirements included remote controllability, overcoming 1/4 inch obstacles, capturing and delivering a golf ball, and incorporating an animal theme, all while adhering to a strict weight limit (800g) and budget (600 Gils)."
       description="Built a propeller-driven hovercraft with brushless motors and custom shrouds. The craft integrated standard servos for rudders and shrouds, a 16-gauge wire power system, and 40-amp ESCs. Fabricated using balsa wood and corrugated cardboard within a strictly allocated budget, and fully controllable via a Spektrum DX8E transmitter."
