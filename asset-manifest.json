@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.85a879a2.css",
-    "main.js": "/static/js/main.6987097f.js",
+    "main.css": "/static/css/main.bf7b670a.css",
+    "main.js": "/static/js/main.738cee19.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/CSR- colour sorting demo backend.mp4": "/static/media/CSR- colour sorting demo backend.165a069ac8dd6b40cbac.mp4",
     "static/media/CSR- colour sorting demo frontend.mp4": "/static/media/CSR- colour sorting demo frontend.fd81bc1f8b58bfe650e4.mp4",
@@ -28,18 +28,19 @@
     "static/media/CSR - Ignition design launcher.jpeg": "/static/media/CSR - Ignition design launcher.1c963efe43f840a64635.jpeg",
     "static/media/SBR-PCB.jpeg": "/static/media/SBR-PCB.fbe6e54f55aac6010777.jpeg",
     "static/media/CSR- chrome launch.jpeg": "/static/media/CSR- chrome launch.be0725dceca8b42ee12c.jpeg",
+    "static/media/alwins-photo.png": "/static/media/alwins-photo.df6e9a87efa645712093.png",
     "static/media/SBR-PIDalgo.png": "/static/media/SBR-PIDalgo.a1cc30565cff813272a4.png",
     "static/media/SBR-finalpic.jpeg": "/static/media/SBR-finalpic.4de845000daa93e0d1f4.jpeg",
     "static/media/SSI-cadmodel.png": "/static/media/SSI-cadmodel.0224487805eef9edc0cc.png",
     "static/media/ORA-Gazebosim.jpg": "/static/media/ORA-Gazebosim.07c6ce4709ef9ca82346.jpg",
     "static/media/ORA-roboticarm.jpg": "/static/media/ORA-roboticarm.9f85a1b273ef3340bbca.jpg",
     "index.html": "/index.html",
-    "main.85a879a2.css.map": "/static/css/main.85a879a2.css.map",
-    "main.6987097f.js.map": "/static/js/main.6987097f.js.map",
+    "main.bf7b670a.css.map": "/static/css/main.bf7b670a.css.map",
+    "main.738cee19.js.map": "/static/js/main.738cee19.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.85a879a2.css",
-    "static/js/main.6987097f.js"
+    "static/css/main.bf7b670a.css",
+    "static/js/main.738cee19.js"
   ]
 }
