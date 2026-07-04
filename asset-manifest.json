@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.39f2fc59.css",
-    "main.js": "/static/js/main.487fa35e.js",
+    "main.js": "/static/js/main.8abaface.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/SSI-Publicdemo1.jpg": "/static/media/SSI-Publicdemo1.26959938050a016d2a08.jpg",
     "static/media/ALM-Publicdemo1.jpg": "/static/media/ALM-Publicdemo1.8da2bb74a3930beb7769.jpg",
@@ -22,23 +22,28 @@
     "static/media/CSR - DOFBOT side view.jpeg": "/static/media/CSR - DOFBOT side view.355ba2784431ba4ae995.jpeg",
     "static/media/CSR - Sorting setup view.jpeg": "/static/media/CSR - Sorting setup view.bedd7be5c491cfc9896c.jpeg",
     "static/media/SBR-kalmanfilterimu.png": "/static/media/SBR-kalmanfilterimu.a2e81ed1560e0b204798.png",
+    "static/media/HCP - Circuit diagram.jpeg": "/static/media/HCP - Circuit diagram.980666effe13fd15c034.jpeg",
     "static/media/SSI-plantardistribution.png": "/static/media/SSI-plantardistribution.102b2e744ac55929e858.png",
+    "static/media/HCP - front view.jpeg": "/static/media/HCP - front view.2d255f0fb1cdaddb4342.jpeg",
     "static/media/CSR - Ignition design launcher.jpeg": "/static/media/CSR - Ignition design launcher.1c963efe43f840a64635.jpeg",
     "static/media/SBR-PCB.jpeg": "/static/media/SBR-PCB.fbe6e54f55aac6010777.jpeg",
+    "static/media/HCP- servo and motor used.jpeg": "/static/media/HCP- servo and motor used.6c7f4f64889f58c4ffa0.jpeg",
     "static/media/CSR- chrome launch.jpeg": "/static/media/CSR- chrome launch.be0725dceca8b42ee12c.jpeg",
     "static/media/alwins-photo.png": "/static/media/alwins-photo.df6e9a87efa645712093.png",
     "static/media/SBR-PIDalgo.png": "/static/media/SBR-PIDalgo.a1cc30565cff813272a4.png",
+    "static/media/HCP - Transmitter.jpeg": "/static/media/HCP - Transmitter.51354a799d247b83e99b.jpeg",
     "static/media/SBR-finalpic.jpeg": "/static/media/SBR-finalpic.4de845000daa93e0d1f4.jpeg",
+    "static/media/HCP- motor used.jpeg": "/static/media/HCP- motor used.d5971670d7b14ec83f5a.jpeg",
     "static/media/SSI-cadmodel.png": "/static/media/SSI-cadmodel.0224487805eef9edc0cc.png",
     "static/media/ORA-Gazebosim.jpg": "/static/media/ORA-Gazebosim.07c6ce4709ef9ca82346.jpg",
     "static/media/ORA-roboticarm.jpg": "/static/media/ORA-roboticarm.9f85a1b273ef3340bbca.jpg",
     "index.html": "/index.html",
     "main.39f2fc59.css.map": "/static/css/main.39f2fc59.css.map",
-    "main.487fa35e.js.map": "/static/js/main.487fa35e.js.map",
+    "main.8abaface.js.map": "/static/js/main.8abaface.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.39f2fc59.css",
-    "static/js/main.487fa35e.js"
+    "static/js/main.8abaface.js"
   ]
 }
