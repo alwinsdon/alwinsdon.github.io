@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.96aa513d.css",
-    "main.js": "/static/js/main.bfff03d5.js",
-    "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
+    "main.js": "/static/js/main.8f6bb240.js",
+    "static/js/191.440e321a.chunk.js": "/static/js/191.440e321a.chunk.js",
     "static/media/CSR- colour sorting demo backend.mp4": "/static/media/CSR- colour sorting demo backend.165a069ac8dd6b40cbac.mp4",
     "static/media/SSI-appcryptodemo.mp4": "/static/media/SSI-appcryptodemo.55ac244d56208aef8b43.mp4",
     "static/media/SBR-testingdemo.mp4": "/static/media/SBR-testingdemo.83d99818fd736dec458a.mp4",
@@ -18,8 +18,10 @@
     "static/media/SSI-democharging.mp4": "/static/media/SSI-democharging.40db4e32ca6eba55d3b1.mp4",
     "static/media/SSI-FSRtesting.mp4": "/static/media/SSI-FSRtesting.11ff3a751ea32e08b3f0.mp4",
     "static/media/HCP - Testing.mp4": "/static/media/HCP - Testing.04f4cc12efbe3d8dc0a1.mp4",
+    "static/media/FRP-demo.mp4": "/static/media/FRP-demo.f0319ee6d23a22e025f4.mp4",
     "static/media/SBR-tryingtofixthepidvalues.mp4": "/static/media/SBR-tryingtofixthepidvalues.4fa637be1f5dee97ed4c.mp4",
     "static/media/SSI-demo.mp4": "/static/media/SSI-demo.a9d503380e400f941e9a.mp4",
+    "static/media/FRP-FEA-simulation.mp4": "/static/media/FRP-FEA-simulation.e5212b5d08f7e0d55d6a.mp4",
     "static/media/BRC - demo test.mp4": "/static/media/BRC - demo test.bdf0fd7186ac89402172.mp4",
     "static/media/ALM-tanktracktest.mp4": "/static/media/ALM-tanktracktest.d49099bcbfdd89102483.mp4",
     "static/media/ALM-Lidar.jpg": "/static/media/ALM-Lidar.b4d970fc2db82c00d3a8.jpg",
@@ -55,12 +57,16 @@
     "static/media/CSR - Ignition gateway logs.jpeg": "/static/media/CSR - Ignition gateway logs.5a1825b49fc452eac16e.jpeg",
     "static/media/CSR-dofbot mqtt success.jpeg": "/static/media/CSR-dofbot mqtt success.7943db8dc988a3eff5d2.jpeg",
     "static/media/FP - Cleaning the cast.jpeg": "/static/media/FP - Cleaning the cast.fed10b75c4b629044c14.jpeg",
+    "static/media/FRP-FEA-stress.jpeg": "/static/media/FRP-FEA-stress.838b29463d7a93f11abc.jpeg",
     "static/media/CSR-dofbot mqtt dashboard.jpeg": "/static/media/CSR-dofbot mqtt dashboard.a25efddc05317143c927.jpeg",
     "static/media/FP - Final cast.jpeg": "/static/media/FP - Final cast.d6df260d4e25a8dcef45.jpeg",
     "static/media/SBR-inverted_pendulum.gif": "/static/media/SBR-inverted_pendulum.c67187c021f249ad6179.gif",
+    "static/media/FRP-FEA-displacement.jpeg": "/static/media/FRP-FEA-displacement.b3b9ebb2039f9a465a43.jpeg",
     "static/media/CSR- Inductive University .jpeg": "/static/media/CSR- Inductive University .52d0f958abb937a31bd0.jpeg",
+    "static/media/FRP-isaac-lab-training.jpeg": "/static/media/FRP-isaac-lab-training.219b9bd3bdb57627b76f.jpeg",
     "static/media/CSR - DOFBOT side view.jpeg": "/static/media/CSR - DOFBOT side view.355ba2784431ba4ae995.jpeg",
     "static/media/BRC - car top view.jpeg": "/static/media/BRC - car top view.54b4e392ba45f9b19c32.jpeg",
+    "static/media/FRP-hardware-test-motor-limits.jpeg": "/static/media/FRP-hardware-test-motor-limits.4fcdd0709362cbe3bc58.jpeg",
     "static/media/SBR-charging12vlipo.jpeg": "/static/media/SBR-charging12vlipo.8a60743177ccdce23cae.jpeg",
     "static/media/ALM-cad-model.png": "/static/media/ALM-cad-model.de39160c5cdf298b28c3.png",
     "static/media/FP - forged chisel 2.jpeg": "/static/media/FP - forged chisel 2.34c9cde8ef20b66498e9.jpeg",
@@ -83,6 +89,7 @@
     "static/media/CSR- chrome launch.jpeg": "/static/media/CSR- chrome launch.be0725dceca8b42ee12c.jpeg",
     "static/media/SBR-wiresconnection.jpeg": "/static/media/SBR-wiresconnection.9778cd662a5700ab7cf3.jpeg",
     "static/media/alwins-photo.png": "/static/media/alwins-photo.df6e9a87efa645712093.png",
+    "static/media/FRP-electrical-wiring.jpeg": "/static/media/FRP-electrical-wiring.fcd5a93346fcea36121c.jpeg",
     "static/media/SBR-PIDalgo.png": "/static/media/SBR-PIDalgo.a1cc30565cff813272a4.png",
     "static/media/FP - moulding mould.jpeg": "/static/media/FP - moulding mould.059dd426ece58bda38de.jpeg",
     "static/media/HCP - Transmitter.jpeg": "/static/media/HCP - Transmitter.51354a799d247b83e99b.jpeg",
@@ -92,16 +99,17 @@
     "static/media/FP- forged chisel 1.jpeg": "/static/media/FP- forged chisel 1.b6fce8f96d985f303931.jpeg",
     "static/media/FP - moulded piece.jpeg": "/static/media/FP - moulded piece.814d957757af47fc07b7.jpeg",
     "static/media/ORA-Gazebosim.jpg": "/static/media/ORA-Gazebosim.07c6ce4709ef9ca82346.jpg",
+    "static/media/FRP-thumbnail.jpg": "/static/media/FRP-thumbnail.d1c9424d83a7b1e08361.jpg",
     "static/media/ORA-roboticarm.jpg": "/static/media/ORA-roboticarm.9f85a1b273ef3340bbca.jpg",
     "static/media/SBR-Circuitdiagram.png": "/static/media/SBR-Circuitdiagram.e046ce3a698992885d44.png",
     "static/media/SBR-Freebodydiagram.png": "/static/media/SBR-Freebodydiagram.95bc48631c26bc46a369.png",
     "index.html": "/index.html",
     "main.96aa513d.css.map": "/static/css/main.96aa513d.css.map",
-    "main.bfff03d5.js.map": "/static/js/main.bfff03d5.js.map",
-    "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
+    "main.8f6bb240.js.map": "/static/js/main.8f6bb240.js.map",
+    "191.440e321a.chunk.js.map": "/static/js/191.440e321a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.96aa513d.css",
-    "static/js/main.bfff03d5.js"
+    "static/js/main.8f6bb240.js"
   ]
 }
