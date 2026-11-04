@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useEffect} from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { Navigation, Footer } from "./components";
 import HomePage from "./pages/HomePage";
@@ -33,20 +33,10 @@ function ScrollToTop() {
 }
 
 function App() {
-    const [mode, setMode] = useState<string>('dark');
-
-    const handleModeChange = () => {
-        if (mode === 'dark') {
-            setMode('light');
-        } else {
-            setMode('dark');
-        }
-    }
-
     return (
         <Router basename="/">
-            <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
-                <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
+            <div className="main-container">
+                <Navigation />
                 <ScrollToTop />
                 <Routes>
                     <Route path="/" element={<HomePage />} />

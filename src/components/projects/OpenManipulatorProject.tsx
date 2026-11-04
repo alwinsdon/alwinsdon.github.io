@@ -9,18 +9,18 @@ import vidTesting from '../../assets/images/projects/ora/ORA-Testing.mp4';
 
 function OpenManipulatorProject() {
   const images: ProjectImage[] = [
-    { src: vidTesting, caption: "Testing the robotic arm with custom trajectories.", type: 'video' },
-    { src: imgCadModel, caption: "CAD model defining the kinematic chain and joint limits." },
-    { src: imgGazebo, caption: "Gazebo simulation environment verifying the URDF and MoveIt planning." },
-    { src: imgRoboticArm, caption: "The physical OpenManipulator-X arm executing planned trajectories." }
+    { src: vidTesting, caption: "Custom trajectory execution.", type: 'video' },
+    { src: imgCadModel, caption: "Kinematic chain CAD model." },
+    { src: imgGazebo, caption: "Gazebo simulation with MoveIt." },
+    { src: imgRoboticArm, caption: "Physical arm executing trajectories." }
   ];
 
   return (
     <ProjectDetail
-      title="OpenManipulator-X Robotic Arm (ROS 2)"
+      title="OpenManipulator-X Robotic Arm"
       timeline="2023"
-      background="Explored robotic manipulation by programming the OpenManipulator-X arm. The objective was to understand the complexities of inverse kinematics, trajectory planning, and hardware-software bridging in a modern ROS 2 environment."
-      description="Configured and simulated a 4-DOF robotic arm using a custom URDF in Gazebo. Developed Python scripts utilizing MoveIt 2 to calculate inverse kinematics and execute smooth trajectory plans. Deployed the tested software onto the physical hardware, allowing the arm to perform precise pick-and-place maneuvers."
+      background="Robotic manipulation with inverse kinematics and ROS 2."
+      description="4-DOF robotic arm simulated in Gazebo with MoveIt 2 for collision-free motion planning, then deployed to physical hardware for pick-and-place tasks."
       technologies={[
         "ROS 2 (Humble)",
         "MoveIt 2",
@@ -30,10 +30,9 @@ function OpenManipulatorProject() {
         "Inverse Kinematics"
       ]}
       features={[
-        "Developed an accurate URDF model for physics simulation in Gazebo.",
-        "Integrated MoveIt 2 for collision-free motion planning and inverse kinematics.",
-        "Created Python scripts to programmatically command joint angles and end-effector poses.",
-        "Bridged simulation with real hardware for 1:1 real-world execution."
+        "Accurate URDF model for Gazebo simulation",
+        "MoveIt 2 collision-free motion planning",
+        "Bridged simulation with real hardware 1:1"
       ]}
       images={images}
       githubLink="https://github.com/alwinsdon"

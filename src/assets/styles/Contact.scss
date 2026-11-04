@@ -1,48 +1,76 @@
-.contact_wrapper svg {
-  font-size: 1em;
-  vertical-align: middle;
-  margin-right: 5px;
+.contact_wrapper {
+    h1 {
+        font-size: 2.5rem;
+        color: #f0f0f5;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    p {
+        color: #8b8b9e;
+        margin-bottom: 24px;
+    }
 }
 
 .contact-form {
-  padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
-  button {
-    float: right;
-    background-color: white;
-    color: #050f0b;
-  }
+    .form-flex {
+        display: flex;
+        gap: 20px;
+    }
 
-  button:hover {
-    background-color: #5000ca;
-    color: white;
-  }
+    .MuiTextField-root {
+        flex: 1;
 
-  fieldset {
-    background-color: white;
-  }
+        .MuiOutlinedInput-root {
+            color: #e6edf3;
+            font-family: 'Inter', sans-serif;
+
+            fieldset {
+                border-color: rgba(139, 92, 246, 0.2);
+            }
+
+            &:hover fieldset {
+                border-color: rgba(139, 92, 246, 0.4);
+            }
+
+            &.Mui-focused fieldset {
+                border-color: #8b5cf6;
+            }
+        }
+
+        .MuiInputLabel-root {
+            color: #8b8b9e;
+            font-family: 'Inter', sans-serif;
+
+            &.Mui-focused {
+                color: #8b5cf6;
+            }
+        }
+    }
+
+    .MuiButton-root {
+        background: linear-gradient(135deg, #6366f1, #8b5cf6);
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        border-radius: 12px;
+        padding: 12px 32px;
+        align-self: flex-start;
+        box-shadow: 0 4px 16px rgba(99, 102, 241, 0.3);
+        transition: all 0.3s ease;
+
+        &:hover {
+            box-shadow: 0 8px 24px rgba(99, 102, 241, 0.5);
+            transform: translateY(-1px);
+        }
+    }
 }
 
-label {
-  font-size: 1.2rem;
-  font-family: 'DomaineDispNar-Medium', sans-serif;
-}
-
-.form-flex {
-  display: flex;
-  gap: 15px;
-  padding-bottom: 15px;
-}
-
-.form-flex .MuiFormControl-root {
-  width: 100%;
-}
-
-form {
-  width: 100% !important;
-}
-
-.body-form {
-  width: 100% !important;
-  margin-bottom: 15px !important;
+@media (max-width: 768px) {
+    .contact-form .form-flex {
+        flex-direction: column;
+    }
 }

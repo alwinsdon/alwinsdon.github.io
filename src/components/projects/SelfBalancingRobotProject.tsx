@@ -17,26 +17,26 @@ import gifInverted from '../../assets/images/projects/sbr/SBR-inverted_pendulum.
 
 function SelfBalancingRobotProject() {
   const images: ProjectImage[] = [
-    { src: vidTestingDemo, caption: "Successful testing demo of the self-balancing algorithm.", type: 'video' },
-    { src: vidPIDFix, caption: "Tuning and fixing PID values for optimal stability.", type: 'video' },
-    { src: gifInverted, caption: "Animation explaining inverted pendulum physics.", type: 'image' },
-    { src: imgFBD, caption: "Free body diagram analyzing the inverted pendulum physics." },
-    { src: imgCircuit, caption: "Custom circuit diagram designed for the motor drivers and Arduino." },
-    { src: imgPCB, caption: "Assembling the components onto the custom perfboard PCB." },
-    { src: imgWire2, caption: "Wiring the stepper motors to the motor driver modules." },
-    { src: imgWire1, caption: "Connecting the MPU6050 IMU for precise tilt measurements." },
-    { src: imgCharging, caption: "Charging the 12V LiPo battery pack used to power the system." },
-    { src: imgKalman, caption: "Kalman filter implementation logic for noise reduction on the IMU." },
-    { src: imgPID, caption: "The PID control algorithm structure used to calculate motor response." },
-    { src: imgFinalPic, caption: "The finalized self-balancing robot successfully maintaining its upright position." }
+    { src: vidTestingDemo, caption: "Balancing algorithm demo.", type: 'video' },
+    { src: vidPIDFix, caption: "PID tuning session.", type: 'video' },
+    { src: gifInverted, caption: "Inverted pendulum physics.", type: 'image' },
+    { src: imgFBD, caption: "Free body diagram." },
+    { src: imgCircuit, caption: "Circuit diagram." },
+    { src: imgPCB, caption: "Custom perfboard assembly." },
+    { src: imgWire2, caption: "Stepper motor wiring." },
+    { src: imgWire1, caption: "MPU6050 IMU connection." },
+    { src: imgCharging, caption: "12V LiPo charging." },
+    { src: imgKalman, caption: "Kalman filter logic." },
+    { src: imgPID, caption: "PID control algorithm." },
+    { src: imgFinalPic, caption: "Final balanced robot." }
   ];
 
   return (
     <ProjectDetail
       title="Self-Balancing Robot"
       timeline="2023"
-      background="Fascinated by control theory and inverted pendulum physics, I set out to build a two-wheeled self-balancing robot. This project served as a deep dive into sensor fusion, PID controllers, and raw Arduino programming."
-      description="Engineered a two-wheeled robot that uses an MPU6050 IMU to measure tilt angles and NEMA 17 stepper motors for rapid counter-movements. Implemented a Kalman Filter in C++ to smooth noisy accelerometer and gyroscope data. Developed a custom PID loop to calculate the exact motor speeds required to maintain a perfect center of gravity."
+      background="A deep dive into control theory and inverted pendulum physics."
+      description="Two-wheeled robot using an MPU6050 IMU with Kalman filtering and a custom PID loop to maintain balance via NEMA 17 stepper motors."
       technologies={[
         "C++",
         "Arduino",
@@ -46,10 +46,9 @@ function SelfBalancingRobotProject() {
         "Stepper Motors"
       ]}
       features={[
-        "Custom PID control loop running at high frequency to maintain stability.",
-        "Implementation of a Kalman filter to fuse accelerometer and gyroscope data.",
-        "Precise motor control using NEMA 17 stepper motors and A4988 drivers.",
-        "Custom soldered PCB integrating the microcontroller, IMU, and motor drivers."
+        "Custom high-frequency PID control loop",
+        "Kalman filter fusing accelerometer and gyroscope data",
+        "Custom soldered PCB integrating all components"
       ]}
       images={images}
       githubLink="https://github.com/alwinsdon"

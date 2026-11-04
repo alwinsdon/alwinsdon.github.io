@@ -17,40 +17,39 @@ import imgPouring from '../../assets/images/projects/fp/FP- pouring for casting.
 
 function FoundryProject() {
   const images: ProjectImage[] = [
-    { src: imgMeltingMetal, caption: "Melting the raw aluminum in the crucible to prepare for casting." },
-    { src: imgMeltingMetal2, caption: "Monitoring the furnace temperature during the melting process." },
-    { src: imgMouldingRaw, caption: "Preparing the green sand and patterns for the mold." },
-    { src: imgMouldingMould, caption: "Packing the sand tightly around the pattern to create the cavity." },
-    { src: imgCastMold, caption: "The completed two-part sand mold ready for pouring." },
-    { src: imgPouring, caption: "Carefully pouring the molten metal into the sprue hole." },
-    { src: imgCleaningCast, caption: "Breaking away the sand and cleaning up the rough cast part." },
-    { src: imgMouldedPiece, caption: "The raw casted piece before final machining and finishing." },
-    { src: imgFinalCast, caption: "The final polished and finished cast aluminum part." },
-    { src: imgForgingHot, caption: "Heating high-carbon steel in the forge until it reaches a glowing, malleable state." },
-    { src: imgForgedChisel1, caption: "Hammering and shaping the heated steel into a chisel profile." },
-    { src: imgForgedChisel2, caption: "The forged chisel after quenching and initial grinding." },
-    { src: imgGasWelding, caption: "Practicing precise gas welding techniques on metal joints." }
+    { src: imgMeltingMetal, caption: "Melting aluminum in the crucible." },
+    { src: imgMeltingMetal2, caption: "Monitoring furnace temperature." },
+    { src: imgMouldingRaw, caption: "Preparing green sand mold." },
+    { src: imgMouldingMould, caption: "Packing sand around the pattern." },
+    { src: imgCastMold, caption: "Completed sand mold." },
+    { src: imgPouring, caption: "Pouring molten metal." },
+    { src: imgCleaningCast, caption: "Cleaning the rough cast." },
+    { src: imgMouldedPiece, caption: "Raw casted piece." },
+    { src: imgFinalCast, caption: "Finished aluminum casting." },
+    { src: imgForgingHot, caption: "Heating steel in the forge." },
+    { src: imgForgedChisel1, caption: "Hammering the chisel profile." },
+    { src: imgForgedChisel2, caption: "Forged chisel after quenching." },
+    { src: imgGasWelding, caption: "Oxy-acetylene gas welding." }
   ];
 
   return (
     <ProjectDetail
-      title="Foundry"
+      title="Foundry & Forging"
       timeline="2026"
-      background="A hands-on manufacturing project exploring traditional metallurgical processes. The objective was to gain practical experience with green sand casting, blacksmithing/forging, and gas welding."
-      description="Successfully completed a series of heavy manufacturing tasks. First, created a wooden pattern, packed a green sand mold, melted scrap aluminum in a crucible furnace, and poured a solid metal casting. Second, utilized a propane forge and anvil to heat, hammer, shape, and temper a high-carbon steel chisel. Finally, demonstrated proficiency in joining metals using oxy-acetylene gas welding."
+      background="Hands-on exploration of traditional metallurgical processes."
+      description="Aluminum sand casting from a green sand mold, forging and tempering a high-carbon steel chisel, and oxy-acetylene gas welding."
       technologies={[
         "Sand Casting",
         "Crucible Furnace",
-        "Blacksmithing / Forging",
+        "Blacksmithing",
         "Oxy-Acetylene Welding",
         "Metallurgy",
         "Metal Finishing"
       ]}
       features={[
-        "Designed and executed a full green sand casting process from raw scrap to a finished aluminum part.",
-        "Forged a functional steel chisel by heating, shaping, and quenching high-carbon steel.",
-        "Created strong, localized welds using an oxy-acetylene torch and filler rod.",
-        "Gained deep understanding of metal properties, heat treatment, and thermal expansion."
+        "Full green sand casting from scrap to finished part",
+        "Forged a functional steel chisel with heat treatment",
+        "Oxy-acetylene welding with filler rod"
       ]}
       images={images}
     />

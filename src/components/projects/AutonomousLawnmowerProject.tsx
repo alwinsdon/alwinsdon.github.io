@@ -29,53 +29,52 @@ import vidTrack from '../../assets/images/projects/alm/ALM-tanktracktest.mp4';
 
 function AutonomousLawnmowerProject() {
   const images: ProjectImage[] = [
-    { src: vidDemo1, caption: "Autonomous navigation demo navigating the yard.", type: 'video' },
+    { src: vidDemo1, caption: "Autonomous navigation demo.", type: 'video' },
     { src: vidDemo2, caption: "Following a pre-mapped trajectory.", type: 'video' },
-    { src: vidDemo3, caption: "Testing obstacle avoidance algorithms.", type: 'video' },
-    { src: vidTeleop, caption: "Teleoperation test using manual controls.", type: 'video' },
-    { src: vidEncoder, caption: "Verifying encoder odometry ticks.", type: 'video' },
-    { src: vidLidar, caption: "Visualizing the 2D LiDAR scan data.", type: 'video' },
-    { src: vidTrack, caption: "Testing the tank track mobility on grass.", type: 'video' },
-    { src: imgPlan1, caption: "Initial conceptual sketch and blueprint planning." },
-    { src: imgPlan2, caption: "Detailed system architecture and wiring diagram layout." },
-    { src: imgPlan3, caption: "Hardware integration plan for sensors and motor controllers." },
-    { src: imgPlan4, caption: "Software node planning for ROS integration." },
-    { src: imgPlan5, caption: "Finalized design schematics before construction." },
-    { src: imgCadModel, caption: "3D CAD model showcasing the chassis design." },
-    { src: imgCadModel2, caption: "Alternative angle of the CAD model highlighting sensor placement." },
-    { src: imgWeldingFrame, caption: "Fabrication process: welding the robust metal frame." },
-    { src: imgFrame, caption: "The completed raw metal frame structure." },
-    { src: imgChoosingLidars, caption: "Evaluating different LiDAR sensors for optimal mapping." },
-    { src: imgLidar, caption: "The selected LiDAR module mounted and ready for testing." },
-    { src: imgEncoderReading, caption: "Testing and calibrating wheel encoder telemetry." },
-    { src: imgRoboclawTest, caption: "Initial diagnostics on the RoboClaw motor controller." },
-    { src: imgSlam, caption: "Successful SLAM mapping generated during a test run." },
-    { src: imgPublicdemo1, caption: "The fully assembled autonomous lawnmower in action." },
-    { src: imgPublicdemo2, caption: "Showcasing the robot to the public during a live demonstration." },
-    { src: imgPublicdemo3, caption: "Another view of the successful public demo event." }
+    { src: vidDemo3, caption: "Obstacle avoidance testing.", type: 'video' },
+    { src: vidTeleop, caption: "Teleoperation test.", type: 'video' },
+    { src: vidEncoder, caption: "Encoder odometry verification.", type: 'video' },
+    { src: vidLidar, caption: "2D LiDAR scan visualization.", type: 'video' },
+    { src: vidTrack, caption: "Tank track mobility test.", type: 'video' },
+    { src: imgPlan1, caption: "Initial blueprint planning." },
+    { src: imgPlan2, caption: "System architecture layout." },
+    { src: imgPlan3, caption: "Sensor integration plan." },
+    { src: imgPlan4, caption: "ROS node planning." },
+    { src: imgPlan5, caption: "Final design schematics." },
+    { src: imgCadModel, caption: "3D CAD model — chassis design." },
+    { src: imgCadModel2, caption: "CAD model — sensor placement." },
+    { src: imgWeldingFrame, caption: "Welding the metal frame." },
+    { src: imgFrame, caption: "Completed raw frame." },
+    { src: imgChoosingLidars, caption: "Evaluating LiDAR sensors." },
+    { src: imgLidar, caption: "LiDAR module mounted." },
+    { src: imgEncoderReading, caption: "Calibrating wheel encoders." },
+    { src: imgRoboclawTest, caption: "RoboClaw motor controller test." },
+    { src: imgSlam, caption: "SLAM mapping output." },
+    { src: imgPublicdemo1, caption: "Fully assembled robot in action." },
+    { src: imgPublicdemo2, caption: "Public demonstration." },
+    { src: imgPublicdemo3, caption: "Live demo event." }
   ];
 
   return (
     <ProjectDetail
-      title="Autonomous Lawnmower (ROS 2)"
-      timeline="2023 - 2024"
-      background="Designed and built a fully autonomous robotic lawnmower from scratch. The goal was to create a robust outdoor mobile robot capable of navigating unstructured environments, mapping its surroundings, and performing autonomous coverage."
-      description="Engineered a custom differential drive robot using a welded aluminum chassis, wheelchair motors, and a RoboClaw motor controller. The software stack was built on ROS 2 (Humble) running on a Jetson Orin Nano, utilizing 2D LiDAR (RPLidar) and an IMU for SLAM (Cartographer) and autonomous navigation (Nav2)."
+      title="Autonomous Lawnmower"
+      timeline="2023 — 2024"
+      background="A fully autonomous robotic lawnmower built from scratch."
+      description="Custom 200+ lb differential drive robot with a welded aluminum chassis, ROS 2 on Jetson Orin Nano, 2D LiDAR SLAM, and Nav2 autonomous navigation."
       technologies={[
         "ROS 2 (Humble)",
         "Nav2 & Cartographer",
         "Python & C++",
         "Jetson Orin Nano",
         "LiDAR & IMU",
-        "RoboClaw Motor Controller",
+        "RoboClaw",
         "SolidWorks",
         "MIG Welding"
       ]}
       features={[
-        "Autonomous navigation in outdoor environments using Nav2",
-        "Real-time 2D mapping and localization with Cartographer SLAM",
-        "Custom differential drive kinematics with closed-loop PID control",
-        "Robust welded chassis capable of carrying a 50lb payload"
+        "Autonomous outdoor navigation using Nav2",
+        "Real-time 2D SLAM with Cartographer",
+        "Custom differential drive with closed-loop PID"
       ]}
       images={images}
       githubLink="https://github.com/alwinsdon/autonomous-lawnmower"

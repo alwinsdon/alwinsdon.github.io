@@ -13,39 +13,34 @@ import vidTesting from '../../assets/images/projects/hcp/HCP - Testing.mp4';
 
 function HovercraftProject() {
   const images: ProjectImage[] = [
-    { src: vidDemoRun, caption: "Live demo run of the hovercraft on the obstacle course.", type: 'video' },
-    { src: vidTesting, caption: "Testing the hovercraft lift and maneuvering capabilities.", type: 'video' },
-    { src: hcpAngle, caption: "Angled profile shot showcasing the custom balsa wood shrouds." },
-    { src: hcpFront, caption: "Front view highlighting the lift mechanism and aerodynamic design." },
-    { src: hcpCircuit, caption: "Detailed circuit diagram for the electronic speed controllers and servos." },
-    { src: hcpMotor, caption: "Close-up of the high-RPM brushless motor used for lift and propulsion." },
-    { src: hcpServo, caption: "Servo motor assembly used for precise rudder control." },
-    { src: hcpTransmitter, caption: "Spektrum DX8E transmitter used for remote teleoperation." }
+    { src: vidDemoRun, caption: "Obstacle course demo run.", type: 'video' },
+    { src: vidTesting, caption: "Lift and maneuver testing.", type: 'video' },
+    { src: hcpAngle, caption: "Custom balsa wood shrouds." },
+    { src: hcpFront, caption: "Front lift mechanism." },
+    { src: hcpCircuit, caption: "ESC and servo circuit." },
+    { src: hcpMotor, caption: "Brushless motor close-up." },
+    { src: hcpServo, caption: "Rudder servo assembly." },
+    { src: hcpTransmitter, caption: "Spektrum DX8E transmitter." }
   ];
 
   return (
     <ProjectDetail
       title="RC Hovercraft"
       timeline="Spring 2025"
-      background="Designed and constructed a hovercraft capable of gliding and maneuvering along the ground to complete an obstacle course for ENGR 11002. Requirements included remote controllability, overcoming 1/4 inch obstacles, capturing and delivering a golf ball, and incorporating an animal theme, all while adhering to a strict weight limit (800g) and budget (600 Gils)."
-      description="Built a propeller-driven hovercraft with brushless motors and custom shrouds. The craft integrated standard servos for rudders and shrouds, a 16-gauge wire power system, and 40-amp ESCs. Fabricated using balsa wood and corrugated cardboard within a strictly allocated budget, and fully controllable via a Spektrum DX8E transmitter."
+      background="Propeller-driven hovercraft for an engineering obstacle course challenge."
+      description="Custom-built hovercraft with brushless motors, balsa wood shrouds, and servo rudders. Remotely controlled via Spektrum DX8E, designed under strict weight and budget constraints."
       technologies={[
         "Brushless Motors",
         "40-amp ESCs",
         "Standard Servos",
         "Propellers",
-        "Balsa Wood Fabrication",
-        "RC Transmitter (Spektrum DX8E)",
-        "Electronics Integration"
+        "Balsa Wood",
+        "RC Transmitter (DX8E)"
       ]}
       features={[
-        "Remotely controllable via Spektrum DX8E with 6 channels",
-        "Capable of overcoming 1/4 inch obstacles and executing reliable turns",
-        "Animal-themed aesthetic design",
-        "Custom golf-ball capture, maneuver, and delivery mechanism",
-        "Ducted propellers with custom bent balsa wood shrouds",
-        "Kept under 800g maximum vehicle mass limit",
-        "Developed comprehensive manufacturing plan and weight/cost estimates"
+        "Overcomes 1/4 inch obstacles with reliable turns",
+        "Custom golf-ball capture and delivery mechanism",
+        "Built under 800g weight limit on a strict budget"
       ]}
       images={images}
       githubLink="https://github.com/alwinsdon"

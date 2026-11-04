@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import '../../assets/styles/ProjectDetail.scss';
+import ParallaxBackground from '../ParallaxBackground';
 
 export interface ProjectImage {
   src: string;
@@ -37,37 +38,47 @@ function ProjectDetail({
 
   const closeModal = () => setSelectedMedia(null);
 
+  // Use the first image/video as the hero
+  const heroMedia = images && images.length > 0 ? images[0] : null;
+  const galleryImages = images && images.length > 1 ? images.slice(1) : [];
+
   return (
     <div className="project-detail-container">
+      <ParallaxBackground elementCount={12} />
       <div className="project-detail-content">
-        <Link to="/" className="back-button">← Back to Projects</Link>
+        <Link to="/" className="back-link">← Back to Projects</Link>
         
         <h1 className="project-title">{title}</h1>
-        <p className="project-timeline">{timeline}</p>
+        <span className="project-timeline">{timeline}</span>
 
-        <section className="project-section">
-          <h2>Background</h2>
-          <p>{background}</p>
-        </section>
+        {/* Hero media */}
+        {heroMedia && (
+          <div className="project-hero-media" onClick={() => setSelectedMedia(heroMedia)}>
+            {heroMedia.type === 'video' ? (
+              <video src={heroMedia.src} muted loop autoPlay playsInline className="hero-media" />
+            ) : (
+              <img src={heroMedia.src} alt={`${title} hero`} className="hero-media" />
+            )}
+          </div>
+        )}
 
-        <section className="project-section">
-          <h2>Description</h2>
+        {/* Brief description */}
+        <section className="project-brief">
           <p>{description}</p>
         </section>
 
-        <section className="project-section">
-          <h2>Technologies</h2>
-          <div className="tech-stack">
-            {technologies.map((tech, index) => (
-              <span key={index} className="tech-badge">{tech}</span>
-            ))}
-          </div>
-        </section>
+        {/* Tech stack */}
+        <div className="tech-stack-row">
+          {technologies.map((tech, index) => (
+            <span key={index} className="tech-badge">{tech}</span>
+          ))}
+        </div>
 
+        {/* Key results */}
         {features && features.length > 0 && (
-          <section className="project-section">
-            <h2>Results</h2>
-            <ul className="features-list">
+          <section className="project-results">
+            <h2>Key Results</h2>
+            <ul className="results-list">
               {features.map((feature, index) => (
                 <li key={index}>{feature}</li>
               ))}
@@ -77,16 +88,17 @@ function ProjectDetail({
 
         {children}
 
-        {images && images.length > 0 && (
-          <section className="project-section">
+        {/* Gallery */}
+        {galleryImages.length > 0 && (
+          <section className="project-gallery-section">
             <h2>Gallery</h2>
             <div className="project-gallery">
-              {images.map((image, index) => (
+              {galleryImages.map((image, index) => (
                 <div key={index} className="gallery-item" onClick={() => setSelectedMedia(image)}>
                   {image.type === 'video' ? (
-                    <video src={image.src} muted loop playsInline className="gallery-video-thumb" />
+                    <video src={image.src} muted loop playsInline className="gallery-thumb" />
                   ) : (
-                    <img src={image.src} alt={`${title} media ${index + 1}`} />
+                    <img src={image.src} alt={`${title} media ${index + 2}`} className="gallery-thumb" />
                   )}
                   <p className="gallery-caption">{image.caption}</p>
                 </div>
@@ -95,25 +107,23 @@ function ProjectDetail({
           </section>
         )}
 
+        {/* Links */}
         {(githubLink || liveLink) && (
-          <section className="project-section">
-            <h2>Links</h2>
-            <div className="project-links">
-              {githubLink && (
-                <a href={githubLink} target="_blank" rel="noreferrer" className="project-link-button">
-                  GitHub Repository
-                </a>
-              )}
-              {liveLink && (
-                <a href={liveLink} target="_blank" rel="noreferrer" className="project-link-button">
-                  Live Demo
-                </a>
-              )}
-            </div>
-          </section>
+          <div className="project-links">
+            {githubLink && (
+              <a href={githubLink} target="_blank" rel="noreferrer" className="project-link-btn">
+                GitHub Repository
+              </a>
+            )}
+            {liveLink && (
+              <a href={liveLink} target="_blank" rel="noreferrer" className="project-link-btn">
+                Live Demo
+              </a>
+            )}
+          </div>
         )}
 
-        <Link to="/#projects" className="back-button-bottom">← Back to Portfolio</Link>
+        <Link to="/#projects" className="back-link back-link-bottom">← Back to Portfolio</Link>
       </div>
 
       {selectedMedia && (

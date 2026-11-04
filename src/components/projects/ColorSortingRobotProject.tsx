@@ -15,24 +15,24 @@ import vidFrontend from '../../assets/images/projects/csr/CSR- colour sorting de
 
 function ColorSortingRobotProject() {
   const images: ProjectImage[] = [
-    { src: vidFrontend, caption: "Front-end perspective: the robot successfully sorting colored blocks.", type: 'video' },
-    { src: vidBackend, caption: "Back-end dashboard view during the sorting process.", type: 'video' },
-    { src: imgSetupView, caption: "Overview of the color sorting workspace and camera setup." },
-    { src: imgSideView, caption: "Side view of the 5-DOF Yahboom DOFBOT arm in position." },
-    { src: imgInductive, caption: "Certification and training modules completed via Inductive University." },
-    { src: imgIgnitionLauncher, caption: "Ignition Perspective design launcher interface." },
-    { src: imgChromeLaunch, caption: "Launching the HMI dashboard through the web browser." },
-    { src: imgMqttDash, caption: "MQTT dashboard layout for real-time monitoring and control." },
-    { src: imgMqttSuccess, caption: "Successful MQTT message transmission logs." },
-    { src: imgIgnitionLogs, caption: "Gateway logs verifying robust backend communication." }
+    { src: vidFrontend, caption: "Robot sorting colored blocks.", type: 'video' },
+    { src: vidBackend, caption: "Backend dashboard view.", type: 'video' },
+    { src: imgSetupView, caption: "Sorting workspace overview." },
+    { src: imgSideView, caption: "5-DOF DOFBOT arm." },
+    { src: imgInductive, caption: "Inductive University training." },
+    { src: imgIgnitionLauncher, caption: "Ignition Perspective launcher." },
+    { src: imgChromeLaunch, caption: "HMI dashboard in browser." },
+    { src: imgMqttDash, caption: "MQTT monitoring dashboard." },
+    { src: imgMqttSuccess, caption: "MQTT transmission logs." },
+    { src: imgIgnitionLogs, caption: "Gateway communication logs." }
   ];
 
   return (
     <ProjectDetail
       title="Autonomous Color-Sorting Robot"
       timeline="2024"
-      background="This project was built to demonstrate end-to-end integration of robotics, computer vision, and industrial HMI design. The goal was to create a fully autonomous pick-and-place system that identifies colored blocks (blue, green, red, yellow) using a USB camera, picks them up with a 5-DOF Yahboom DOFBOT arm, and places them in a designated drop zone — all orchestrated through an Ignition Perspective HMI dashboard."
-      description="Built an end-to-end robotic system combining computer vision, inverse kinematics, MQTT communication, and industrial HMI design. A Raspberry Pi bridge script receives commands from an Ignition Perspective dashboard, searches four corners of the workspace, visually identifies the requested color, picks the block, and places it in the center — all without human intervention. The system includes live status feedback and survived real-world failures including USB camera dropouts, I2C bus issues, and MoveIt planning dead-ends."
+      background="End-to-end robotic pick-and-place with computer vision and industrial HMI."
+      description="OpenCV-powered color detection with a 5-DOF DOFBOT arm, MQTT-orchestrated sorting, and an Ignition Perspective dashboard for remote control and live telemetry."
       technologies={[
         "Python",
         "OpenCV",
@@ -40,13 +40,12 @@ function ColorSortingRobotProject() {
         "MQTT",
         "Inverse Kinematics",
         "Raspberry Pi",
-        "Yahboom DOFBOT (5-DOF)"
+        "DOFBOT (5-DOF)"
       ]}
       features={[
-        "Developed custom OpenCV color-detection pipeline (HSV filtering) with contour area thresholds.",
-        "Programmed a custom Inverse Kinematics (IK) solver to translate 2D pixel coordinates into 3D joint angles.",
-        "Built a bidirectional MQTT bridge connecting the physical robot to an industrial SCADA/HMI backend.",
-        "Designed a responsive Ignition Perspective dashboard for remote control and live telemetry monitoring."
+        "Custom OpenCV HSV color-detection pipeline",
+        "Custom IK solver for pixel-to-joint-angle mapping",
+        "Bidirectional MQTT bridge to Ignition SCADA/HMI"
       ]}
       images={images}
       githubLink="https://github.com/alwinsdon"

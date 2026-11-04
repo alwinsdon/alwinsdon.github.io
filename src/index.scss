@@ -1,75 +1,91 @@
 body {
   margin: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.1rem !important;
-  background-color: #0a0a0c;
-  color: #e0e0e0;
+  font-size: 1rem;
+  background-color: #0d1117;
+  color: #e6edf3;
+  line-height: 1.6;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace !important;
-  font-size: 1rem !important;
+  font-family: 'JetBrains Mono', source-code-pro, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9rem;
 }
 
 .main-container {
   position: relative;
-  background-color: #0a0a0c;
+  background-color: #0d1117;
+  min-height: 100vh;
 }
 
 a {
   text-decoration: none;
-  color: #0ff;
-  transition: all 0.3s ease;
+  color: #8b5cf6;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #fff;
-  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  color: #a78bfa;
 }
 
-p, h1, h2, h3, h4, h5, label, button {
-  color: #e0e0e0;
-  font-family: 'Courier New', Courier, monospace;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+label,
+button {
+  color: #e6edf3;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .navigation-bar {
   justify-content: space-between;
-  background-color: rgba(10, 10, 12, 0.9);
-  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  background-color: rgba(13, 17, 23, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(139, 92, 246, 0.1);
 
   button {
-    font-size: 1.1rem;
-    font-family: 'Courier New', Courier, monospace;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #0ff;
-    padding: 6px 10px;
-    text-shadow: 0 0 5px #0ff;
-    
+    font-size: 0.95rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #e6edf3;
+    padding: 8px 16px;
+    letter-spacing: 0.01em;
+
     &:hover {
-      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+      color: #a78bfa;
     }
   }
 
   svg {
     cursor: pointer;
-    color: #f0f;
-    filter: drop-shadow(0 0 5px #f0f);
-    
+    color: #8b5cf6;
+    transition: color 0.2s ease;
+
     &:hover {
-      filter: drop-shadow(0 0 15px #f0f);
+      color: #a78bfa;
     }
   }
 }
 
 .navigation-bar-responsive {
-  span, p {
-    color: #0ff;
-    font-family: 'Courier New', Courier, monospace;
-    text-transform: uppercase;
+
+  span,
+  p {
+    color: #e6edf3;
+    font-family: 'Inter', sans-serif;
   }
 }
 
@@ -82,24 +98,12 @@ p, h1, h2, h3, h4, h5, label, button {
   justify-content: center;
 }
 
-.header-image {
-  width: 100%;
-  height: 450px;
-
-  img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-    filter: contrast(1.2) saturate(1.5);
-  }
-}
-
 .mobile-menu-top {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .items-container {
@@ -110,47 +114,38 @@ p, h1, h2, h3, h4, h5, label, button {
   justify-content: center;
 }
 
-// Light mode fallback (keeps cyberpunk feel but lighter)
-.light-mode {
-  background-color: #f5f5fa;
-  color: #1a1a24;
+// Section dividers
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border: none;
+  margin: 0 0 2rem 0;
+  border-radius: 2px;
+}
 
-  .main-container, .navigation-bar {
-    background-color: #f5f5fa;
-  }
+// Scrollbar styling
+::-webkit-scrollbar {
+  width: 8px;
+}
 
-  p, h1, h2, h3, h4, h5, label, button {
-    color: #1a1a24;
-  }
+::-webkit-scrollbar-track {
+  background: #0d1117;
+}
 
-  a {
-    color: #5000ca;
-  }
+::-webkit-scrollbar-thumb {
+  background: #21262d;
+  border-radius: 4px;
 
-  a:hover {
-    color: #7000ff;
-    text-shadow: 0 0 10px rgba(112, 0, 255, 0.5);
+  &:hover {
+    background: #30363d;
   }
+}
 
-  .navigation-bar svg {
-    color: #5000ca;
-    filter: drop-shadow(0 0 5px rgba(80, 0, 202, 0.4));
-  }
-  
-  .navigation-bar button {
-    color: #5000ca;
-    text-shadow: 0 0 5px rgba(80, 0, 202, 0.4);
-    
-    &:hover {
-      color: #7000ff;
-      text-shadow: 0 0 10px rgba(112, 0, 255, 0.6);
-    }
-  }
-
-  .navigation-bar-responsive span, .navigation-bar-responsive p {
-    color: #5000ca;
-    text-shadow: 0 0 5px rgba(80, 0, 202, 0.4);
-  }
+// Selection highlight
+::selection {
+  background: rgba(139, 92, 246, 0.3);
+  color: #fff;
 }
 
 @media screen {

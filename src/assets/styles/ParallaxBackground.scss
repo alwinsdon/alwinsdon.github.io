@@ -1,0 +1,51 @@
+.parallax-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.parallax-element {
+  position: absolute;
+  will-change: transform;
+  transition: none;
+}
+
+.parallax-circle {
+  border-radius: 50%;
+}
+
+.parallax-square {
+  border-radius: 2px;
+}
+
+.parallax-confetti {
+  border-radius: 2px;
+}
+
+.parallax-triangle {
+  /* Triangles are drawn with borders in inline styles, no border-radius */
+}
+
+// Mobile fallback: gentle floating CSS animation
+@media (max-width: 768px) {
+  .parallax-element {
+    animation: float-gentle 8s ease-in-out infinite alternate;
+  }
+
+  @keyframes float-gentle {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-12px) rotate(3deg);
+    }
+    100% {
+      transform: translateY(5px) rotate(-2deg);
+    }
+  }
+}

@@ -1,30 +1,30 @@
 .vertical-timeline span {
-    color: white;
-    font-family: 'Courier Prime', monospace;
+    color: #e6edf3;
+    font-family: 'Inter', sans-serif;
 }
 
 .vertical-timeline p {
-    color: rgb(39, 40, 34);
+    color: #b0b8c4;
 }
 
 .vertical-timeline-element p {
-    color: rgb(39, 40, 34);
+    color: #b0b8c4;
 }
 
 .vertical-timeline-element h3 {
-    color: rgb(39, 40, 34);
+    color: #f0f0f5;
 }
 
 .vertical-timeline-element h4 {
-    color: rgb(39, 40, 34);
+    color: #b0b8c4;
 }
 
 .vertical-timeline-element span {
-    color: rgb(39, 40, 34);
+    color: #b0b8c4;
 }
 
 .vertical-timeline-element .vertical-timeline-element-date {
-    color: white;
+    color: #8b8b9e;
 }
 
 .svg-inline--fa {
@@ -33,6 +33,6 @@
 
 @media screen and (max-width: 1170px) {
     .vertical-timeline-element .vertical-timeline-element-date {
-        color: rgb(39, 40, 34);
+        color: #8b8b9e;
     }
 }

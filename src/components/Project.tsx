@@ -12,57 +12,93 @@ import furutaThumb from '../assets/images/projects/furuta/FRP-thumbnail.jpg';
 import '../assets/styles/Project.scss';
 
 function Project() {
-    return(
-    <div className="projects-container" id="projects">
-        <h1>Personal Projects</h1>
-        <div className="projects-grid">
-            <div className="project">
-                <Link to="/project/furuta-pendulum"><img src={furutaThumb} className="zoom" alt="Reinforcement Learning Furuta Pendulum" width="100%"/></Link>
-                <Link to="/project/furuta-pendulum"><h2>RL Furuta Pendulum</h2></Link>
-                <p>Balanced a real rotary inverted pendulum with a PPO policy trained in NVIDIA Isaac Lab and run on an ESP32. Modeled stepper torque limits, encoder error, and motor delay to close the sim-to-real gap; 99.7% success in randomized simulation.</p>
-            </div>
-            <div className="project">
-                <Link to="/project/autonomous-lawnmower"><img src={lawnmowerThumb} className="zoom" alt="Autonomous Lawnmower" width="100%"/></Link>
-                <Link to="/project/autonomous-lawnmower"><h2>Autonomous Lawnmower</h2></Link>
-                <p>Designed a 200+ lb autonomous robotic platform with tank tracks, ROS-based navigation, SLAM mapping, YOLO object detection, and LiDAR-camera sensor fusion. Top speed 28 km/h, 5-hour runtime, sub-$1k cost.</p>
-            </div>
-            <div className="project">
-                <Link to="/project/smart-insole"><img src={insoleThumb} className="zoom" alt="Smart Insole" width="100%"/></Link>
-                <Link to="/project/smart-insole"><h2>Smart Insole</h2></Link>
-                <p>Engineered a wearable sensing platform with ESP32, FSR sensors, IMU, and haptic actuators for step tracking. Features sensor fusion algorithms and ML-based anti-cheat detection with 75-80% accuracy.</p>
-            </div>
-            <div className="project">
-                <Link to="/project/self-balancing-robot"><img src={balancingRobotThumb} className="zoom" alt="Self-Balancing Robot" width="100%"/></Link>
-                <Link to="/project/self-balancing-robot"><h2>Self-Balancing Robot</h2></Link>
-                <p>Built a two-wheel balancing robot with MIG-welded metal chassis, Kalman-filtered IMU, and PID control on Arduino. Achieves 3-5 minutes stable balancing, compensating for 10° tilt disturbances.</p>
-            </div>
-            <div className="project">
-                <Link to="/project/openmanipulator-arm"><img src={roboticArmThumb} className="zoom" alt="OpenManipulator Robotic Arm" width="100%"/></Link>
-                <Link to="/project/openmanipulator-arm"><h2>OpenManipulator Robotic Arm</h2></Link>
-                <p>Constructed a 6-DOF robotic arm with 3D-printed joints and ROS integration. Programmed motion planning using MoveIt, Gazebo, and custom PID/IK controllers. Validated pick-and-place with ~1kg payload.</p>
-            </div>
-            <div className="project">
-                <Link to="/project/color-sorting-robot"><img src={colorSortingThumb} className="zoom" alt="Autonomous Color-Sorting Robot" width="100%"/></Link>
-                <Link to="/project/color-sorting-robot"><h2>Autonomous Color-Sorting Robot</h2></Link>
-                <p>Built an end-to-end pick-and-place system with OpenCV color detection, a 5-DOF DOFBOT arm, and an Ignition Perspective HMI dashboard. Autonomous sorting controlled via MQTT with live status feedback.</p>
-            </div>
-            <div className="project">
-                <Link to="/project/autonomous-hovercraft"><img src={hovercraftThumb} className="zoom" alt="RC Hovercraft" width="100%"/></Link>
-                <Link to="/project/autonomous-hovercraft"><h2>RC Hovercraft</h2></Link>
-                <p>Designed and built a remote-controlled, propeller-driven hovercraft capable of maneuvering over obstacles and delivering a payload. Features custom balsa wood shrouds and an animal-themed aesthetic.</p>
-            </div>
-            <div className="project">
-                <Link to="/project/bluetooth-rc-car"><img src={rcCarThumb} className="zoom" alt="Bluetooth RC Car" width="100%"/></Link>
-                <Link to="/project/bluetooth-rc-car"><h2>Bluetooth RC Car</h2></Link>
-                <p>Engineered a fast remote-controlled vehicle using Arduino, an HC-05 Bluetooth module, and custom motor drivers. Operated entirely through a wireless smartphone application.</p>
-            </div>
-            <div className="project">
-                <Link to="/project/foundry-forging"><img src={foundryThumb} className="zoom" alt="Foundry" width="100%"/></Link>
-                <Link to="/project/foundry-forging"><h2>Foundry</h2></Link>
-                <p>Explored heavy manufacturing by casting a solid aluminum part from a green sand mold, forging and tempering a high-carbon steel chisel, and performing oxy-acetylene gas welding.</p>
+    return (
+        <div className="projects-container" id="projects">
+            <h1>Projects</h1>
+            <div className="projects-grid">
+                <Link to="/project/furuta-pendulum" className="project-card">
+                    <div className="project-image-wrapper">
+                        <img src={furutaThumb} alt="Reinforcement Learning Furuta Pendulum" />
+                    </div>
+                    <div className="project-info">
+                        <h2>RL Furuta Pendulum</h2>
+                        <p>PPO policy trained in Isaac Lab, deployed on an ESP32 to balance a real pendulum.</p>
+                    </div>
+                </Link>
+                <Link to="/project/autonomous-lawnmower" className="project-card">
+                    <div className="project-image-wrapper">
+                        <img src={lawnmowerThumb} alt="Autonomous Lawnmower" />
+                    </div>
+                    <div className="project-info">
+                        <h2>Autonomous Lawnmower</h2>
+                        <p>200+ lb ROS2-powered robot with SLAM, LiDAR, and YOLO object detection.</p>
+                    </div>
+                </Link>
+                <Link to="/project/smart-insole" className="project-card">
+                    <div className="project-image-wrapper">
+                        <img src={insoleThumb} alt="Smart Insole" />
+                    </div>
+                    <div className="project-info">
+                        <h2>Smart Insole</h2>
+                        <p>ESP32-based wearable with FSR sensors and ML-powered gait analysis.</p>
+                    </div>
+                </Link>
+                <Link to="/project/self-balancing-robot" className="project-card">
+                    <div className="project-image-wrapper">
+                        <img src={balancingRobotThumb} alt="Self-Balancing Robot" />
+                    </div>
+                    <div className="project-info">
+                        <h2>Self-Balancing Robot</h2>
+                        <p>Two-wheel balancer with Kalman-filtered IMU and PID control.</p>
+                    </div>
+                </Link>
+                <Link to="/project/openmanipulator-arm" className="project-card">
+                    <div className="project-image-wrapper">
+                        <img src={roboticArmThumb} alt="OpenManipulator Robotic Arm" />
+                    </div>
+                    <div className="project-info">
+                        <h2>Robotic Arm</h2>
+                        <p>6-DOF arm with ROS2 MoveIt motion planning and Gazebo simulation.</p>
+                    </div>
+                </Link>
+                <Link to="/project/color-sorting-robot" className="project-card">
+                    <div className="project-image-wrapper">
+                        <img src={colorSortingThumb} alt="Color-Sorting Robot" />
+                    </div>
+                    <div className="project-info">
+                        <h2>Color-Sorting Robot</h2>
+                        <p>OpenCV pick-and-place system with MQTT and Ignition HMI dashboard.</p>
+                    </div>
+                </Link>
+                <Link to="/project/autonomous-hovercraft" className="project-card">
+                    <div className="project-image-wrapper">
+                        <img src={hovercraftThumb} alt="RC Hovercraft" />
+                    </div>
+                    <div className="project-info">
+                        <h2>RC Hovercraft</h2>
+                        <p>Custom-built propeller-driven hovercraft with balsa wood shrouds.</p>
+                    </div>
+                </Link>
+                <Link to="/project/bluetooth-rc-car" className="project-card">
+                    <div className="project-image-wrapper">
+                        <img src={rcCarThumb} alt="Bluetooth RC Car" />
+                    </div>
+                    <div className="project-info">
+                        <h2>Bluetooth RC Car</h2>
+                        <p>Arduino-powered RC vehicle controlled via smartphone over Bluetooth.</p>
+                    </div>
+                </Link>
+                <Link to="/project/foundry-forging" className="project-card">
+                    <div className="project-image-wrapper">
+                        <img src={foundryThumb} alt="Foundry" />
+                    </div>
+                    <div className="project-info">
+                        <h2>Foundry & Forging</h2>
+                        <p>Aluminum sand casting, steel forging, and oxy-acetylene gas welding.</p>
+                    </div>
+                </Link>
             </div>
         </div>
-    </div>
     );
 }
 

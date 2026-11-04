@@ -25,46 +25,45 @@ import vidTestingFSR from '../../assets/images/projects/ssi/SSI-testingfsr.mp4';
 
 function SmartInsoleProject() {
   const images: ProjectImage[] = [
-    { src: vidDemo, caption: "Live demonstration of the smart insole in action.", type: 'video' },
-    { src: vidAppCrypto, caption: "Testing the Flutter app connectivity and data encryption.", type: 'video' },
-    { src: vidFSRTesting, caption: "Real-time FSR telemetry data streaming.", type: 'video' },
-    { src: vidTestingFSR, caption: "More extensive testing of FSR sensor response curves.", type: 'video' },
-    { src: vidDemoCharging, caption: "Demonstrating the battery charging circuit.", type: 'video' },
-    { src: imgPlantar, caption: "Research on human plantar pressure distribution to optimize sensor placement." },
-    { src: imgCadmodel, caption: "CAD model designed in SolidWorks for the custom ergonomic insole." },
-    { src: img3dprinting, caption: "Slicing the 3D model for printing with flexible TPU filament." },
-    { src: img3dprint, caption: "The 3D printed TPU insole base fresh off the printer." },
-    { src: imgElectronics, caption: "Selection of miniature electronics: ESP32, battery, and FSRs." },
-    { src: imgCompPlacement, caption: "Strategic layout and placement of the electronic components inside the insole." },
-    { src: imgSensorConn, caption: "Soldering and connecting the delicate Force Sensitive Resistors (FSRs)." },
-    { src: imgPrototype1, caption: "Initial bare-bones prototype testing the hardware integration." },
-    { src: imgTestingFSR, caption: "Calibrating the pressure sensitivity of the FSRs using serial output." },
-    { src: imgTesting1, caption: "Live telemetry dashboard showing real-time foot pressure data." },
-    { src: imgFinalPrototype, caption: "The final encapsulated smart shoe insole prototype." },
-    { src: imgPublicdemo1, caption: "Demonstrating the smart insole functionality at the project showcase." },
-    { src: imgPublicdemo2, caption: "Users testing the mobile companion app built with Flutter." },
-    { src: imgPublicdemo3, caption: "Explaining the BLE communication stack and data analysis features." }
+    { src: vidDemo, caption: "Smart insole live demo.", type: 'video' },
+    { src: vidAppCrypto, caption: "Flutter app connectivity test.", type: 'video' },
+    { src: vidFSRTesting, caption: "Real-time FSR telemetry.", type: 'video' },
+    { src: vidTestingFSR, caption: "FSR sensor response curves.", type: 'video' },
+    { src: vidDemoCharging, caption: "Battery charging demo.", type: 'video' },
+    { src: imgPlantar, caption: "Plantar pressure distribution research." },
+    { src: imgCadmodel, caption: "SolidWorks CAD model." },
+    { src: img3dprinting, caption: "3D print slicing (TPU)." },
+    { src: img3dprint, caption: "3D printed TPU insole." },
+    { src: imgElectronics, caption: "ESP32, battery, and FSR components." },
+    { src: imgCompPlacement, caption: "Component placement layout." },
+    { src: imgSensorConn, caption: "FSR soldering and wiring." },
+    { src: imgPrototype1, caption: "Initial hardware prototype." },
+    { src: imgTestingFSR, caption: "FSR calibration via serial." },
+    { src: imgTesting1, caption: "Live pressure telemetry dashboard." },
+    { src: imgFinalPrototype, caption: "Final encapsulated prototype." },
+    { src: imgPublicdemo1, caption: "Project showcase demo." },
+    { src: imgPublicdemo2, caption: "Mobile app testing." },
+    { src: imgPublicdemo3, caption: "BLE communication walkthrough." }
   ];
 
   return (
     <ProjectDetail
-      title="Smart Shoe Insole for Gait Analysis"
+      title="Smart Shoe Insole"
       timeline="2024"
-      background="Designed to help athletes and physical therapy patients monitor their walking patterns. This project bridges wearable hardware, wireless communication, and mobile app development to provide real-time biomechanical feedback."
-      description="Developed a 3D-printed flexible TPU insole embedded with Force Sensitive Resistors (FSRs) and an ESP32 microcontroller. The system reads plantar pressure distribution and transmits the data via Bluetooth Low Energy (BLE) to a custom Flutter mobile application, allowing users to visualize their gait in real-time."
+      background="Wearable for real-time gait analysis and biomechanical feedback."
+      description="3D-printed flexible TPU insole with embedded FSR sensors and ESP32, streaming plantar pressure data via BLE to a custom Flutter app."
       technologies={[
         "C++",
         "ESP32",
         "Flutter & Dart",
-        "Bluetooth Low Energy (BLE)",
+        "Bluetooth Low Energy",
         "SolidWorks",
         "3D Printing (TPU)"
       ]}
       features={[
-        "Ergonomic insole designed in SolidWorks and 3D printed with flexible TPU.",
-        "Embedded FSR sensors to accurately map foot pressure distribution.",
-        "ESP32-based hardware for localized data processing and low-power BLE transmission.",
-        "Cross-platform Flutter app for real-time visualization and gait analysis."
+        "Ergonomic insole designed in SolidWorks and 3D printed with flexible TPU",
+        "ESP32-based hardware with BLE data transmission",
+        "Cross-platform Flutter app for real-time gait visualization"
       ]}
       images={images}
       githubLink="https://github.com/alwinsdon"
