@@ -8,6 +8,7 @@ import colorSortingThumb from '../assets/images/projects/csr/CSR - Sorting setup
 import hovercraftThumb from '../assets/images/projects/hcp/HCP - front view.jpeg';
 import rcCarThumb from '../assets/images/projects/brc/BRC - car top view.jpeg';
 import foundryThumb from '../assets/images/projects/fp/FP - Final cast.jpeg';
+import furutaThumb from '../assets/images/projects/furuta/FRP-thumbnail.jpg';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -15,6 +16,11 @@ function Project() {
     <div className="projects-container" id="projects">
         <h1>Personal Projects</h1>
         <div className="projects-grid">
+            <div className="project">
+                <Link to="/project/furuta-pendulum"><img src={furutaThumb} className="zoom" alt="Reinforcement Learning Furuta Pendulum" width="100%"/></Link>
+                <Link to="/project/furuta-pendulum"><h2>RL Furuta Pendulum</h2></Link>
+                <p>Balanced a real rotary inverted pendulum with a PPO policy trained in NVIDIA Isaac Lab and run on an ESP32. Modeled stepper torque limits, encoder error, and motor delay to close the sim-to-real gap; 99.7% success in randomized simulation.</p>
+            </div>
             <div className="project">
                 <Link to="/project/autonomous-lawnmower"><img src={lawnmowerThumb} className="zoom" alt="Autonomous Lawnmower" width="100%"/></Link>
                 <Link to="/project/autonomous-lawnmower"><h2>Autonomous Lawnmower</h2></Link>

@@ -327,6 +327,43 @@ Machine Learning, YOLO, Object Detection
 
 ---
 
+### 9. Reinforcement Learning Furuta Pendulum
+**Timeline:** 2026 — Present
+
+**Background:** Can a policy trained entirely in simulation balance a real, low-cost rotary pendulum? A sim-to-real study in reinforcement learning.
+
+**Description:** Rotary inverted (Furuta) pendulum designed in SolidWorks and balanced by a PPO policy trained in NVIDIA Isaac Lab, then exported to C and run at 60 Hz on an Arduino Nano ESP32 driving a NEMA 17 stepper. The simulation models the real hardware: stepper torque limits, lost steps, encoder resolution, motor delay, and randomized physics.
+
+**Technologies Used:**
+- NVIDIA Isaac Lab 3.0 & Isaac Sim 6.0
+- PPO (RSL-RL)
+- PyTorch
+- Python
+- C++ (ESP32 firmware, PlatformIO)
+- Arduino Nano ESP32 (ESP32-S3)
+- NEMA 17 Stepper + A4988 Driver
+- LPD3806 Rotary Encoder
+- SolidWorks (CAD, URDF export, SimulationXpress FEA)
+- URDF / USD
+
+**Key Features:**
+- PPO policy trained across 4,096 parallel simulated pendulums
+- Stepper-motor simulation: torque-angle law, lost sync, encoder quantization, motor delay
+- Domain randomization: pushes, motor strength, friction, mass, sensor noise, delay
+- Policy exported to C and run on the ESP32 at 60 Hz
+
+**Development Highlights:**
+- Designed the pendulum in SolidWorks, exported to URDF, and set it up in Isaac Sim 6.0
+- Trained four PPO tasks in Isaac Lab, from ideal physics up to a full model of the real hardware
+- Found motor delay to be the key sim-to-real gap: a 33 ms delay dropped success to 0%; giving the policy its last 2 actions brought it to 100%
+- Final hardware-model policy survives 99.7% of randomized 10 s episodes, and 99.3% with pushes 3× more often than in training
+- Exported the network to C for the ESP32: outputs match PyTorch to 1e-6, inference well under 1 ms
+- Built a browser-based hardware test that measured the real motor's limits (~50 rad/s², 9 rad/s), then retrained within them
+- Validated a 3D-printed PLA part with SolidWorks SimulationXpress FEA (minimum factor of safety 18.2)
+- First real-world balance held for up to 11.2 s; next steps are an encoder zero-offset fix, motor torque improvements, and swing-up
+
+---
+
 ## 📊 Complete Technology Index
 
 This is a consolidated, searchable list of every technology, tool, and skill demonstrated across all projects and work experience.
@@ -334,12 +371,12 @@ This is a consolidated, searchable list of every technology, tool, and skill dem
 | Category | Technologies |
 |---|---|
 | **Programming Languages** | Python, C++, Dart |
-| **Robotics Frameworks** | ROS 2 (Humble), Nav2, Cartographer, MoveIt 2, Gazebo |
+| **Robotics Frameworks** | ROS 2 (Humble), Nav2, Cartographer, MoveIt 2, Gazebo, NVIDIA Isaac Sim, Isaac Lab |
 | **Embedded Platforms** | Arduino, ESP32, Raspberry Pi, Jetson Orin Nano |
-| **Control & Algorithms** | PID Control, Kalman Filter, SLAM, Inverse Kinematics, Sensor Fusion |
-| **Computer Vision & ML** | OpenCV, YOLO, Object Detection, Machine Learning |
+| **Control & Algorithms** | PID Control, Kalman Filter, SLAM, Inverse Kinematics, Sensor Fusion, Reinforcement Learning (PPO), Sim-to-Real Transfer |
+| **Computer Vision & ML** | OpenCV, YOLO, Object Detection, Machine Learning, PyTorch |
 | **Communication Protocols** | MQTT, Bluetooth (HC-05), BLE, URDF |
-| **CAD & Mechanical** | Autodesk Inventor, SolidWorks, 3D Printing (TPU), MIG Welding |
+| **CAD & Mechanical** | Autodesk Inventor, SolidWorks, SolidWorks SimulationXpress (FEA), 3D Printing (TPU, PLA), MIG Welding |
 | **PCB & Electronics** | KiCad, PCB Design, RoboClaw, L298N Motor Driver, ESCs |
 | **Industrial** | PLC, Ignition Perspective, SCADA/HMI |
 | **Software & Tools** | Flutter, Unity, VR (VIVE Pro), MATLAB |
@@ -356,4 +393,4 @@ This is a consolidated, searchable list of every technology, tool, and skill dem
 
 ---
 
-*This document was auto-generated from the portfolio website source code. Last updated: August 2026.*
+*This document was auto-generated from the portfolio website source code. Last updated: November 2026.*
