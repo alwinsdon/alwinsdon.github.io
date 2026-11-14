@@ -364,6 +364,36 @@ Machine Learning, YOLO, Object Detection
 
 ---
 
+### 10. PLC Motor Control and Panel Wiring
+**Timeline:** 2026
+
+**Background:** How do industrial machines start, stop, jog and reverse a motor safely? Hands-on work in ladder logic on an Allen-Bradley ControlLogix PLC and in hard-wired relay control on a NEMA panel.
+
+**Description:** Programmed an Allen-Bradley ControlLogix PLC in Studio 5000 Logix Designer to run classic motor-control circuits from an operator panel, then wired a relay-based reversing motor circuit by hand: 120 VAC motor power, a Minarik drive with potentiometer speed control, a 5 VDC direction relay, and a 24 VDC start, stop, seal-in and jog circuit with limit switches that reverse the motor at each end of travel.
+
+**Technologies Used:**
+- Allen-Bradley ControlLogix (1756-L81E / Logix 5581E) with 1756 DC input, DC output and analog I/O modules
+- Studio 5000 Logix Designer
+- Ladder Logic (XIC, XIO, OTE, OSR, seal-in, interlocks)
+- EtherNet/IP
+- Relay Logic and Control Panel Wiring (120 VAC power, 5 VDC and 24 VDC control)
+- Minarik Motor Drive
+- Limit Switches
+
+**Key Features:**
+- Start-Stop-Jog with a seal-in circuit
+- Push-ON/Push-OFF motor toggle from a single pushbutton
+- Forward/reverse direction toggle with an interlock
+- Automatic motor reversal between two limit switches
+
+**Development Highlights:**
+- Built a one-shot rising circuit from only XIC, XIO, OTE and internal bits, and used its pulse in a flip-flop to toggle the motor on and off
+- Toggled direction with the built-in OSR instruction and added a programmatic interlock so FWD and REV can never energize together
+- Renamed I/O tags to readable names and documented every rung with comments
+- Wired the 120 VAC power, 5 VDC direction relay and 24 VDC control circuits; wiring verified with power off before the first run, then demonstrated start, auto-reverse, stop and jog
+
+---
+
 ## 📊 Complete Technology Index
 
 This is a consolidated, searchable list of every technology, tool, and skill demonstrated across all projects and work experience.
@@ -378,7 +408,7 @@ This is a consolidated, searchable list of every technology, tool, and skill dem
 | **Communication Protocols** | MQTT, Bluetooth (HC-05), BLE, URDF |
 | **CAD & Mechanical** | Autodesk Inventor, SolidWorks, SolidWorks SimulationXpress (FEA), 3D Printing (TPU, PLA), MIG Welding |
 | **PCB & Electronics** | KiCad, PCB Design, RoboClaw, L298N Motor Driver, ESCs |
-| **Industrial** | PLC, Ignition Perspective, SCADA/HMI |
+| **Industrial** | PLC (Allen-Bradley ControlLogix), Studio 5000 Logix Designer, Ladder Logic, Relay Logic, Control Panel Wiring, Motor Drives, EtherNet/IP, Ignition Perspective, SCADA/HMI |
 | **Software & Tools** | Flutter, Unity, VR (VIVE Pro), MATLAB |
 | **Fabrication** | Sand Casting, Blacksmithing, Oxy-Acetylene Welding, Metallurgy |
 

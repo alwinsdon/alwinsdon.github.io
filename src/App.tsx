@@ -11,6 +11,7 @@ import HovercraftProject from "./components/projects/HovercraftProject";
 import BluetoothRCCarProject from "./components/projects/BluetoothRCCarProject";
 import FoundryProject from "./components/projects/FoundryProject";
 import FurutaPendulumProject from "./components/projects/FurutaPendulumProject";
+import PLCMotorControlProject from "./components/projects/PLCMotorControlProject";
 import './index.scss';
 
 function ScrollToTop() {
@@ -49,6 +50,7 @@ function App() {
                     <Route path="/project/bluetooth-rc-car" element={<BluetoothRCCarProject />} />
                     <Route path="/project/foundry-forging" element={<FoundryProject />} />
                     <Route path="/project/furuta-pendulum" element={<FurutaPendulumProject />} />
+                    <Route path="/project/plc-motor-control" element={<PLCMotorControlProject />} />
                 </Routes>
                 <Footer />
             </div>

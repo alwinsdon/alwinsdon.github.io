@@ -9,6 +9,7 @@ import hovercraftThumb from '../assets/images/projects/hcp/HCP - front view.jpeg
 import rcCarThumb from '../assets/images/projects/brc/BRC - car top view.jpeg';
 import foundryThumb from '../assets/images/projects/fp/FP - Final cast.jpeg';
 import furutaThumb from '../assets/images/projects/furuta/FRP-thumbnail.jpg';
+import plcThumb from '../assets/images/projects/plc/PLC.jpeg';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -23,6 +24,15 @@ function Project() {
                     <div className="project-info">
                         <h2>RL Furuta Pendulum</h2>
                         <p>PPO policy trained in Isaac Lab, deployed on an ESP32 to balance a real pendulum.</p>
+                    </div>
+                </Link>
+                <Link to="/project/plc-motor-control" className="project-card">
+                    <div className="project-image-wrapper">
+                        <img src={plcThumb} alt="PLC Motor Control and Panel Wiring" />
+                    </div>
+                    <div className="project-info">
+                        <h2>PLC Motor Control</h2>
+                        <p>Ladder logic on an Allen-Bradley ControlLogix and a hand-wired relay reversing motor panel.</p>
                     </div>
                 </Link>
                 <Link to="/project/autonomous-lawnmower" className="project-card">
