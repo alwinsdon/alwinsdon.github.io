@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.67ab8cb4.css",
-    "main.js": "/static/js/main.a87222f9.js",
+    "main.js": "/static/js/main.d17776d3.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/CSR- colour sorting demo backend.mp4": "/static/media/CSR- colour sorting demo backend.165a069ac8dd6b40cbac.mp4",
     "static/media/SSI-appcryptodemo.mp4": "/static/media/SSI-appcryptodemo.55ac244d56208aef8b43.mp4",
     "static/media/SBR-testingdemo.mp4": "/static/media/SBR-testingdemo.83d99818fd736dec458a.mp4",
+    "static/media/start stop joj logix screen demo.mp4": "/static/media/start stop joj logix screen demo.dc494d4cc3f559fec268.mp4",
     "static/media/CSR- colour sorting demo frontend.mp4": "/static/media/CSR- colour sorting demo frontend.fd81bc1f8b58bfe650e4.mp4",
     "static/media/SSI-Publicdemo1.jpg": "/static/media/SSI-Publicdemo1.26959938050a016d2a08.jpg",
     "static/media/SSI-Publicdemo3.jpg": "/static/media/SSI-Publicdemo3.dd0f8c3647fd524c9fbf.jpg",
@@ -23,7 +24,9 @@
     "static/media/SSI-demo.mp4": "/static/media/SSI-demo.a9d503380e400f941e9a.mp4",
     "static/media/FRP-FEA-simulation.mp4": "/static/media/FRP-FEA-simulation.e5212b5d08f7e0d55d6a.mp4",
     "static/media/BRC - demo test.mp4": "/static/media/BRC - demo test.bdf0fd7186ac89402172.mp4",
+    "static/media/relay-based motor demo.mp4": "/static/media/relay-based motor demo.22bb5434bf6945e0ff94.mp4",
     "static/media/ALM-tanktracktest.mp4": "/static/media/ALM-tanktracktest.d49099bcbfdd89102483.mp4",
+    "static/media/Start-Stop-Jog_and_Push-ON _Push-OFF _Circuits_DEMO.mp4": "/static/media/Start-Stop-Jog_and_Push-ON _Push-OFF _Circuits_DEMO.09bfbbc751647d1c6b5c.mp4",
     "static/media/ALM-Lidar.jpg": "/static/media/ALM-Lidar.b4d970fc2db82c00d3a8.jpg",
     "static/media/ALM-Publicdemo2.jpg": "/static/media/ALM-Publicdemo2.631db5d3e09a60f6510e.jpg",
     "static/media/ALM-roboclawtest.jpg": "/static/media/ALM-roboclawtest.2ca1cb593a0e9f358827.jpg",
@@ -62,10 +65,12 @@
     "static/media/FP - Final cast.jpeg": "/static/media/FP - Final cast.d6df260d4e25a8dcef45.jpeg",
     "static/media/SBR-inverted_pendulum.gif": "/static/media/SBR-inverted_pendulum.c67187c021f249ad6179.gif",
     "static/media/FRP-FEA-displacement.jpeg": "/static/media/FRP-FEA-displacement.b3b9ebb2039f9a465a43.jpeg",
+    "static/media/Nema panel wiring.jpeg": "/static/media/Nema panel wiring.a728033d6e9df3a9f89c.jpeg",
     "static/media/CSR- Inductive University .jpeg": "/static/media/CSR- Inductive University .52d0f958abb937a31bd0.jpeg",
     "static/media/FRP-isaac-lab-training.jpeg": "/static/media/FRP-isaac-lab-training.219b9bd3bdb57627b76f.jpeg",
     "static/media/CSR - DOFBOT side view.jpeg": "/static/media/CSR - DOFBOT side view.355ba2784431ba4ae995.jpeg",
     "static/media/BRC - car top view.jpeg": "/static/media/BRC - car top view.54b4e392ba45f9b19c32.jpeg",
+    "static/media/PLC.jpeg": "/static/media/PLC.829dea3ac81bd272260c.jpeg",
     "static/media/FRP-hardware-test-motor-limits.jpeg": "/static/media/FRP-hardware-test-motor-limits.4fcdd0709362cbe3bc58.jpeg",
     "static/media/SBR-charging12vlipo.jpeg": "/static/media/SBR-charging12vlipo.8a60743177ccdce23cae.jpeg",
     "static/media/ALM-cad-model.png": "/static/media/ALM-cad-model.de39160c5cdf298b28c3.png",
@@ -75,10 +80,13 @@
     "static/media/SBR-kalmanfilterimu.png": "/static/media/SBR-kalmanfilterimu.a2e81ed1560e0b204798.png",
     "static/media/HCP - Circuit diagram.jpeg": "/static/media/HCP - Circuit diagram.980666effe13fd15c034.jpeg",
     "static/media/FP- gas welding.jpeg": "/static/media/FP- gas welding.8a359b4d191cb87e8126.jpeg",
+    "static/media/LED panel.jpeg": "/static/media/LED panel.aa8da2788b1d8bf64dbc.jpeg",
     "static/media/FP - Melting metal for casting.jpeg": "/static/media/FP - Melting metal for casting.5f85d3eff08412eda7da.jpeg",
     "static/media/FP - Moulding Raw material.jpeg": "/static/media/FP - Moulding Raw material.96316052e5efc3e03b75.jpeg",
     "static/media/SSI-plantardistribution.png": "/static/media/SSI-plantardistribution.102b2e744ac55929e858.png",
+    "static/media/logix designer template  scrn.png": "/static/media/logix designer template  scrn.a949110409cfb0ac70fe.png",
     "static/media/HCP - front view.jpeg": "/static/media/HCP - front view.2d255f0fb1cdaddb4342.jpeg",
+    "static/media/Minarik Motor Drive.jpeg": "/static/media/Minarik Motor Drive.5e514e011c8deee0182b.jpeg",
     "static/media/SBR-wireconnection2.jpeg": "/static/media/SBR-wireconnection2.be94c6f662e1e4e57f1b.jpeg",
     "static/media/CSR - Ignition design launcher.jpeg": "/static/media/CSR - Ignition design launcher.1c963efe43f840a64635.jpeg",
     "static/media/SBR-PCB.jpeg": "/static/media/SBR-PCB.fbe6e54f55aac6010777.jpeg",
@@ -105,11 +113,11 @@
     "static/media/SBR-Freebodydiagram.png": "/static/media/SBR-Freebodydiagram.95bc48631c26bc46a369.png",
     "index.html": "/index.html",
     "main.67ab8cb4.css.map": "/static/css/main.67ab8cb4.css.map",
-    "main.a87222f9.js.map": "/static/js/main.a87222f9.js.map",
+    "main.d17776d3.js.map": "/static/js/main.d17776d3.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.67ab8cb4.css",
-    "static/js/main.a87222f9.js"
+    "static/js/main.d17776d3.js"
   ]
 }
